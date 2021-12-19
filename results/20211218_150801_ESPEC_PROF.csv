@@ -1,0 +1,7 @@
+algorithm,features,n_features,train_time,mem_max,balanced_accuracy,f1_weighted,precision_weighted,recall_weighted,roc_auc_ovr_weighted,confusion_matrix
+KNeighborsClassifier(n_jobs=-1),"('fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol')",11,27.3545711,1443.19140625,0.2830422794117647,0.5977569057884088,0.5870079451065366,0.621875,0.7344122145288794,"[[99 35  2  0  0  0]
+ [32 89  7  0  0  0]
+ [ 4 25 11  0  0  0]
+ [ 6  5  0  0  0  0]
+ [ 1  1  0  0  0  0]
+ [ 0  1  2  0  0  0]]"

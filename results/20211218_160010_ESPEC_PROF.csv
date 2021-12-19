@@ -1,0 +1,13 @@
+algorithm,params,features,n_features,train_time,mem_max,balanced_accuracy,f1_weighted,precision_weighted,recall_weighted,roc_auc_ovr_weighted,confusion_matrix
+KNeighborsClassifier(n_jobs=-1),"('fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol')",11,27.4468965,1441.05078125,"OrderedDict([('metric', 'euclidean'), ('n_neighbors', 17)])",0.255514705882353,0.5390829063373241,0.5255903247230722,0.5625,0.7229130855409585,"[[ 0  0  1  1  0  0]
+ [ 0  0  9  2  0  0]
+ [ 0  0 98 36  2  0]
+ [ 0  0 45 72 11  0]
+ [ 0  0  3 27 10  0]
+ [ 0  0  0  3  0  0]]"
+KNeighborsClassifier(n_jobs=-1),"('fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol')",11,21.182889600000003,1446.62109375,"OrderedDict([('metric', 'euclidean'), ('n_neighbors', 17)])",0.255514705882353,0.5390829063373241,0.5255903247230722,0.5625,0.7229130855409585,"[[ 0  0  1  1  0  0]
+ [ 0  0  9  2  0  0]
+ [ 0  0 98 36  2  0]
+ [ 0  0 45 72 11  0]
+ [ 0  0  3 27 10  0]
+ [ 0  0  0  3  0  0]]"
