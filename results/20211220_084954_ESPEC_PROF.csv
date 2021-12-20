@@ -1,0 +1,55 @@
+algorithm,params,features,n_features,train_time,predict_time,mem_max,balanced_accuracy,f1_weighted,precision_weighted,recall_weighted,roc_auc_ovr_weighted,confusion_matrix
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=17)","{'metric': 'euclidean', 'n_neighbors': 3}","('fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol')",11,0.003948199999996405,0.0003003331249999963,1444.51953125,0.3052236519607843,0.6020358305899733,0.5924567750753882,0.6125,0.7431488125806369,"[[ 0  0  1  1  0  0]
+ [ 0  0  7  4  0  0]
+ [ 1  2 95 36  2  0]
+ [ 1  1 33 81 12  0]
+ [ 1  0  4 15 20  0]
+ [ 0  0  0  0  3  0]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=17)","{'metric': 'euclidean', 'n_neighbors': 11}","('fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol')",11,0.003272899999998913,0.00032101999999998296,1445.19921875,0.26992953431372546,0.5565543917449627,0.5504079814857524,0.575,0.7470351659986714,"[[ 0  1  0  1  0  0]
+ [ 0  0  9  2  0  0]
+ [ 0  0 90 46  0  0]
+ [ 0  0 38 81  9  0]
+ [ 0  0  4 23 13  0]
+ [ 0  0  1  1  1  0]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=17)","{'metric': 'euclidean', 'n_neighbors': 17}","('fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol')",11,0.0032324999999957527,0.00031685468750000114,1444.9765625,0.28184742647058825,0.5901296392172306,0.5787813182449872,0.6125,0.755916582447152,"[[  0   1   0   1   0   0]
+ [  0   0   9   2   0   0]
+ [  0   0 101  34   1   0]
+ [  0   0  36  83   9   0]
+ [  0   0   4  24  12   0]
+ [  0   0   0   2   1   0]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=17)","{'metric': 'manhattan', 'n_neighbors': 3}","('fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol')",11,0.0035496999999935497,0.0003174803125000292,1444.92578125,0.29646278966131906,0.5734722328084554,0.5701024793975561,0.578125,0.7253827452732647,"[[ 0  0  1  1  0  0]
+ [ 1  1  6  3  0  0]
+ [ 1  5 91 37  2  0]
+ [ 0  3 36 76 13  0]
+ [ 1  0  4 18 17  0]
+ [ 0  0  0  1  2  0]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=17)","{'metric': 'manhattan', 'n_neighbors': 11}","('fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol')",11,0.0034121999999996433,0.000354422187499992,1444.640625,0.28829656862745096,0.5875405457088358,0.5801694515951089,0.60625,0.7474568655758399,"[[ 0  0  1  1  0  0]
+ [ 0  0 10  1  0  0]
+ [ 0  1 95 40  0  0]
+ [ 0  0 37 84  7  0]
+ [ 0  0  3 22 15  0]
+ [ 0  0  0  1  2  0]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=17)","{'metric': 'manhattan', 'n_neighbors': 17}","('fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol')",11,0.0038176999999990358,0.0003424668750000137,1444.86328125,0.2741881127450981,0.5710094354617308,0.5674608819345661,0.59375,0.7566122641914841,"[[ 0  0  1  1  0  0]
+ [ 0  0  8  3  0  0]
+ [ 0  0 99 37  0  0]
+ [ 0  0 42 79  7  0]
+ [ 0  0  3 25 12  0]
+ [ 0  0  0  3  0  0]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=17)","{'metric': 'minkowski', 'n_neighbors': 3}","('fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol')",11,0.0032748999999938633,0.000305673437499987,1444.83203125,0.3052236519607843,0.6020358305899733,0.5924567750753882,0.6125,0.7431488125806369,"[[ 0  0  1  1  0  0]
+ [ 0  0  7  4  0  0]
+ [ 1  2 95 36  2  0]
+ [ 1  1 33 81 12  0]
+ [ 1  0  4 15 20  0]
+ [ 0  0  0  0  3  0]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=17)","{'metric': 'minkowski', 'n_neighbors': 11}","('fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol')",11,0.003203999999996654,0.0003164478124999981,1445.01171875,0.26992953431372546,0.5565543917449627,0.5504079814857524,0.575,0.7470351659986714,"[[ 0  1  0  1  0  0]
+ [ 0  0  9  2  0  0]
+ [ 0  0 90 46  0  0]
+ [ 0  0 38 81  9  0]
+ [ 0  0  4 23 13  0]
+ [ 0  0  1  1  1  0]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=17)","{'metric': 'minkowski', 'n_neighbors': 17}","('fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol')",11,0.0034092000000072176,0.00031114906249998244,1445.0234375,0.28184742647058825,0.5901296392172306,0.5787813182449872,0.6125,0.755916582447152,"[[  0   1   0   1   0   0]
+ [  0   0   9   2   0   0]
+ [  0   0 101  34   1   0]
+ [  0   0  36  83   9   0]
+ [  0   0   4  24  12   0]
+ [  0   0   0   2   1   0]]"
