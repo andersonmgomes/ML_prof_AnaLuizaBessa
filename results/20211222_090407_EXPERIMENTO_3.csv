@@ -1,0 +1,1325 @@
+algorithm,params,features,n_features,train_time,predict_time,mem_max,balanced_accuracy,f1_weighted,precision_weighted,recall_weighted,roc_auc_ovr_weighted,confusion_matrix
+"StackingClassifier(estimators=[('e1',
+                                RandomForestClassifier(max_depth=15,
+                                                       max_features='log2',
+                                                       min_samples_leaf=2,
+                                                       min_samples_split=15,
+                                                       n_estimators=800,
+                                                       n_jobs=-1)),
+                               ('e2', HistGradientBoostingClassifier()),
+                               ('e3',
+                                XGBClassifier(alpha=1.0, base_score=0.5,
+                                              booster='gbtree',
+                                              colsample_bylevel=1,
+                                              colsample_bynode=1,
+                                              colsample_bytree=1.0,
+                                              enable_categorical=False, e...
+                                              gpu_id=-1, importance_type=None,
+                                              interaction_constraints='',
+                                              lambda=0.1,
+                                              learning_rate=0.0500000007,
+                                              max_delta_step=0, max_depth=15,
+                                              min_child_weight=7, missing=nan,
+                                              monotone_constraints='()',
+                                              n_estimators=100, n_jobs=12,
+                                              num_parallel_tree=1,
+                                              objective='multi:softprob',
+                                              predictor='auto', random_state=0,
+                                              reg_alpha=1,
+                                              reg_lambda=0.00999999978,
+                                              scale_pos_weight=None,
+                                              subsample=0.6, ...))],
+                   n_jobs=-1)","OrderedDict([('stack_method', 'auto')])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,37.207400100000086,0.0026975108801947554,3010.9140625,0.9068627450980392,0.9066457695056973,0.9064519651353202,0.9070904645476773,0.9855003489267437,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   1 102  32   1   0]
+ [  0   2  26 101   7   0]
+ [  0   0   1   6 129   0]
+ [  0   0   0   0   0 137]]"
+"StackingClassifier(estimators=[('e1',
+                                RandomForestClassifier(max_depth=15,
+                                                       max_features='log2',
+                                                       min_samples_leaf=2,
+                                                       min_samples_split=15,
+                                                       n_estimators=800,
+                                                       n_jobs=-1)),
+                               ('e2', HistGradientBoostingClassifier()),
+                               ('e3',
+                                XGBClassifier(alpha=1.0, base_score=0.5,
+                                              booster='gbtree',
+                                              colsample_bylevel=1,
+                                              colsample_bynode=1,
+                                              colsample_bytree=1.0,
+                                              enable_categorical=False, e...
+                                              gpu_id=-1, importance_type=None,
+                                              interaction_constraints='',
+                                              lambda=0.1,
+                                              learning_rate=0.0500000007,
+                                              max_delta_step=0, max_depth=15,
+                                              min_child_weight=7, missing=nan,
+                                              monotone_constraints='()',
+                                              n_estimators=100, n_jobs=12,
+                                              num_parallel_tree=1,
+                                              objective='multi:softprob',
+                                              predictor='auto', random_state=0,
+                                              reg_alpha=1,
+                                              reg_lambda=0.00999999978,
+                                              scale_pos_weight=None,
+                                              subsample=0.6, ...))],
+                   n_jobs=-1)","OrderedDict([('stack_method', 'auto')])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",9,33.829974799999036,0.0025268125916865494,3159.04296875,0.9056372549019608,0.9052774088189841,0.9048937503111354,0.9058679706601467,0.9852332460597958,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   2 103  30   1   0]
+ [  0   2  26 100   8   0]
+ [  0   0   1   7 128   0]
+ [  0   0   0   0   0 137]]"
+"RandomForestClassifier(max_depth=15, max_features='log2', min_samples_leaf=2,
+                       min_samples_split=15, n_estimators=800, n_jobs=-1)","OrderedDict([('max_depth', None), ('max_features', 'sqrt'), ('min_samples_leaf', 1), ('min_samples_split', 5), ('n_estimators', 500)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.9275446999999986,0.0012605125916873817,2671.79296875,0.9044117647058824,0.9034596265669229,0.9026910291632433,0.9046454767726161,0.9865149244635009,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   2 103  29   2   0]
+ [  0   3  25  98  10   0]
+ [  0   0   1   6 129   0]
+ [  0   0   0   0   0 137]]"
+"RandomForestClassifier(max_depth=15, max_features='log2', min_samples_leaf=2,
+                       min_samples_split=15, n_estimators=800, n_jobs=-1)","OrderedDict([('max_depth', None), ('max_features', 'sqrt'), ('min_samples_leaf', 1), ('min_samples_split', 2), ('n_estimators', 500)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.8243619000004401,0.0009110622249374594,2678.3515625,0.9044117647058824,0.9039571155038251,0.9036277193231861,0.9046454767726161,0.9872812237844969,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   2 102  31   1   0]
+ [  0   3  25 100   8   0]
+ [  0   0   1   7 128   0]
+ [  0   0   0   0   0 137]]"
+HistGradientBoostingClassifier(),"OrderedDict([('warm_start', False)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,7.121245099999214,0.00034273080684686956,2714.76171875,0.9007352941176471,0.900036606275323,0.8997153949005815,0.9009779951100244,0.9865077544113745,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   2  99  34   1   0]
+ [  0   3  25  99   9   0]
+ [  0   0   1   6 129   0]
+ [  0   0   0   0   0 137]]"
+"XGBClassifier(alpha=1.0, base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1.0,
+              enable_categorical=False, eta=0.1, eval_metric='mlogloss',
+              gamma=0.5, gpu_id=-1, importance_type=None,
+              interaction_constraints='', lambda=0.1,
+              learning_rate=0.0500000007, max_delta_step=0, max_depth=15,
+              min_child_weight=7, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=12, num_parallel_tree=1,
+              objective='multi:softprob', predictor='auto', random_state=0,
+              reg_alpha=1, reg_lambda=0.00999999978, scale_pos_weight=None,
+              subsample=0.6, ...)","OrderedDict([('alpha', 0.0), ('colsample_bytree', 0.8), ('eta', 0.01), ('gamma', 0.05), ('lambda', 0.1), ('max_depth', 9), ('min_child_weight', 3), ('subsample', 0.9)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.135166300000492,5.887665036621146e-05,2955.4921875,0.9007352941176471,0.8983708409391473,0.8971306450235517,0.9009779951100244,0.9825086578379425,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   4 104  26   2   0]
+ [  2   6  23  93  11   1]
+ [  0   0   1   5 130   0]
+ [  0   0   0   0   0 137]]"
+"VotingClassifier(estimators=[('e1',
+                              RandomForestClassifier(max_depth=15,
+                                                     max_features='log2',
+                                                     min_samples_leaf=2,
+                                                     min_samples_split=15,
+                                                     n_estimators=800,
+                                                     n_jobs=-1)),
+                             ('e2', HistGradientBoostingClassifier()),
+                             ('e3',
+                              XGBClassifier(alpha=1.0, base_score=0.5,
+                                            booster='gbtree',
+                                            colsample_bylevel=1,
+                                            colsample_bynode=1,
+                                            colsample_bytree=1.0,
+                                            enable_categorical=False, eta...
+                                            interaction_constraints='',
+                                            lambda=0.1,
+                                            learning_rate=0.0500000007,
+                                            max_delta_step=0, max_depth=15,
+                                            min_child_weight=7, missing=nan,
+                                            monotone_constraints='()',
+                                            n_estimators=100, n_jobs=12,
+                                            num_parallel_tree=1,
+                                            objective='multi:softprob',
+                                            predictor='auto', random_state=0,
+                                            reg_alpha=1,
+                                            reg_lambda=0.00999999978,
+                                            scale_pos_weight=None,
+                                            subsample=0.6, ...))],
+                 n_jobs=-1, voting='soft')","OrderedDict([('voting', 'soft')])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",9,6.540344600001845,0.0024803559902183666,2901.1875,0.9007352941176471,0.899635292533819,0.8988521940959854,0.9009779951100244,0.983152122637077,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   3 102  30   1   0]
+ [  1   4  24  97  10   0]
+ [  0   0   1   7 128   0]
+ [  0   0   0   0   0 137]]"
+"XGBClassifier(alpha=1.0, base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1.0,
+              enable_categorical=False, eta=0.1, eval_metric='mlogloss',
+              gamma=0.5, gpu_id=-1, importance_type=None,
+              interaction_constraints='', lambda=0.1,
+              learning_rate=0.0500000007, max_delta_step=0, max_depth=15,
+              min_child_weight=7, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=12, num_parallel_tree=1,
+              objective='multi:softprob', predictor='auto', random_state=0,
+              reg_alpha=1, reg_lambda=0.00999999978, scale_pos_weight=None,
+              subsample=0.6, ...)","OrderedDict([('alpha', 0.1), ('colsample_bytree', 0.9), ('eta', 0.1), ('gamma', 1.0), ('lambda', 0.1), ('max_depth', 25), ('min_child_weight', 1), ('subsample', 0.8)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.6351548000002367,5.748899755524107e-05,2971.76171875,0.9007352941176471,0.8981578418051817,0.8969417141500241,0.9009779951100244,0.9822379646805759,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   4 106  24   2   0]
+ [  2   6  25  91  11   1]
+ [  0   0   1   5 130   0]
+ [  0   0   0   0   0 137]]"
+"RandomForestClassifier(max_depth=15, max_features='log2', min_samples_leaf=2,
+                       min_samples_split=15, n_estimators=800, n_jobs=-1)","OrderedDict([('max_depth', 20), ('max_features', 'log2'), ('min_samples_leaf', 1), ('min_samples_split', 2), ('n_estimators', 300)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.5075405999996292,0.0005671755501222226,2670.2578125,0.8995098039215687,0.8986547040075321,0.8978144976064221,0.8997555012224939,0.9869379575389512,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   2 101  31   2   0]
+ [  0   3  29  96   8   0]
+ [  0   0   1   6 129   0]
+ [  0   0   0   0   0 137]]"
+"XGBClassifier(alpha=1.0, base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1.0,
+              enable_categorical=False, eta=0.1, eval_metric='mlogloss',
+              gamma=0.5, gpu_id=-1, importance_type=None,
+              interaction_constraints='', lambda=0.1,
+              learning_rate=0.0500000007, max_delta_step=0, max_depth=15,
+              min_child_weight=7, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=12, num_parallel_tree=1,
+              objective='multi:softprob', predictor='auto', random_state=0,
+              reg_alpha=1, reg_lambda=0.00999999978, scale_pos_weight=None,
+              subsample=0.6, ...)","OrderedDict([('alpha', 1.0), ('colsample_bytree', 0.8), ('eta', 0.05), ('gamma', 0.5), ('lambda', 0.01), ('max_depth', 12), ('min_child_weight', 5), ('subsample', 0.8)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.1661366000007547,6.19283618594138e-05,2954.22265625,0.8982843137254902,0.8956855952160868,0.8946554469828012,0.8985330073349633,0.9809169062659086,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   5 105  24   2   0]
+ [  0   6  27  90  12   1]
+ [  0   0   1   5 130   0]
+ [  0   0   0   0   0 137]]"
+"XGBClassifier(alpha=1.0, base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1.0,
+              enable_categorical=False, eta=0.1, eval_metric='mlogloss',
+              gamma=0.5, gpu_id=-1, importance_type=None,
+              interaction_constraints='', lambda=0.1,
+              learning_rate=0.0500000007, max_delta_step=0, max_depth=15,
+              min_child_weight=7, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=12, num_parallel_tree=1,
+              objective='multi:softprob', predictor='auto', random_state=0,
+              reg_alpha=1, reg_lambda=0.00999999978, scale_pos_weight=None,
+              subsample=0.6, ...)","OrderedDict([('alpha', 0.5), ('colsample_bytree', 0.7), ('eta', 0.025), ('gamma', 0.5), ('lambda', 0.1), ('max_depth', 17), ('min_child_weight', 1), ('subsample', 0.9)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.5874855999991269,6.018887530591536e-05,2971.0546875,0.8982843137254902,0.8964209610494842,0.8951775314570628,0.8985330073349633,0.9837186041342522,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   4 102  28   2   0]
+ [  1   4  25  94  11   1]
+ [  0   0   1   6 129   0]
+ [  0   0   0   0   0 137]]"
+"XGBClassifier(alpha=1.0, base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1.0,
+              enable_categorical=False, eta=0.1, eval_metric='mlogloss',
+              gamma=0.5, gpu_id=-1, importance_type=None,
+              interaction_constraints='', lambda=0.1,
+              learning_rate=0.0500000007, max_delta_step=0, max_depth=15,
+              min_child_weight=7, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=12, num_parallel_tree=1,
+              objective='multi:softprob', predictor='auto', random_state=0,
+              reg_alpha=1, reg_lambda=0.00999999978, scale_pos_weight=None,
+              subsample=0.6, ...)","OrderedDict([('alpha', 0.5), ('colsample_bytree', 0.8), ('eta', 0.1), ('gamma', 0.3), ('lambda', 0.1), ('max_depth', 15), ('min_child_weight', 3), ('subsample', 0.8)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.3071041999992303,6.136564792105476e-05,2959.81640625,0.8970588235294117,0.8946047924389332,0.8932820898096477,0.8973105134474327,0.9833063261369909,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   5 104  26   1   0]
+ [  1   5  28  90  11   1]
+ [  0   0   1   5 130   0]
+ [  0   0   0   0   0 137]]"
+"XGBClassifier(alpha=1.0, base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1.0,
+              enable_categorical=False, eta=0.1, eval_metric='mlogloss',
+              gamma=0.5, gpu_id=-1, importance_type=None,
+              interaction_constraints='', lambda=0.1,
+              learning_rate=0.0500000007, max_delta_step=0, max_depth=15,
+              min_child_weight=7, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=12, num_parallel_tree=1,
+              objective='multi:softprob', predictor='auto', random_state=0,
+              reg_alpha=1, reg_lambda=0.00999999978, scale_pos_weight=None,
+              subsample=0.6, ...)","OrderedDict([('alpha', 0.5), ('colsample_bytree', 0.8), ('eta', 0.05), ('gamma', 0.3), ('lambda', 0.01), ('max_depth', 9), ('min_child_weight', 1), ('subsample', 0.7)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.2301838000003045,5.725513447499404e-05,2957.3828125,0.8970588235294117,0.8947993702066084,0.8934174580941657,0.8973105134474327,0.9823007263262805,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   4 103  27   2   0]
+ [  1   5  28  91  10   1]
+ [  0   0   1   5 130   0]
+ [  0   0   0   0   0 137]]"
+"VotingClassifier(estimators=[('e1',
+                              RandomForestClassifier(max_depth=15,
+                                                     max_features='log2',
+                                                     min_samples_leaf=2,
+                                                     min_samples_split=15,
+                                                     n_estimators=800,
+                                                     n_jobs=-1)),
+                             ('e2', HistGradientBoostingClassifier()),
+                             ('e3',
+                              XGBClassifier(alpha=1.0, base_score=0.5,
+                                            booster='gbtree',
+                                            colsample_bylevel=1,
+                                            colsample_bynode=1,
+                                            colsample_bytree=1.0,
+                                            enable_categorical=False, eta...
+                                            interaction_constraints='',
+                                            lambda=0.1,
+                                            learning_rate=0.0500000007,
+                                            max_delta_step=0, max_depth=15,
+                                            min_child_weight=7, missing=nan,
+                                            monotone_constraints='()',
+                                            n_estimators=100, n_jobs=12,
+                                            num_parallel_tree=1,
+                                            objective='multi:softprob',
+                                            predictor='auto', random_state=0,
+                                            reg_alpha=1,
+                                            reg_lambda=0.00999999978,
+                                            scale_pos_weight=None,
+                                            subsample=0.6, ...))],
+                 n_jobs=-1, voting='soft')","OrderedDict([('voting', 'soft')])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,8.120865900000354,0.002528860391197899,2786.41796875,0.8958333333333334,0.8941030314481897,0.8930400561011662,0.8960880195599022,0.9829854478790959,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   4  99  32   1   0]
+ [  0   5  26  94  11   0]
+ [  0   0   1   5 130   0]
+ [  0   0   0   0   0 137]]"
+"XGBClassifier(alpha=1.0, base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1.0,
+              enable_categorical=False, eta=0.1, eval_metric='mlogloss',
+              gamma=0.5, gpu_id=-1, importance_type=None,
+              interaction_constraints='', lambda=0.1,
+              learning_rate=0.0500000007, max_delta_step=0, max_depth=15,
+              min_child_weight=7, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=12, num_parallel_tree=1,
+              objective='multi:softprob', predictor='auto', random_state=0,
+              reg_alpha=1, reg_lambda=0.00999999978, scale_pos_weight=None,
+              subsample=0.6, ...)","OrderedDict([('alpha', 0.5), ('colsample_bytree', 0.7), ('eta', 0.05), ('gamma', 0.3), ('lambda', 0.1), ('max_depth', 9), ('min_child_weight', 1), ('subsample', 0.7)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.2521687999997084,5.9598655256893586e-05,2956.3125,0.8958333333333334,0.8933259951252075,0.8920707787340254,0.8960880195599022,0.9829514085567401,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   5 103  25   3   0]
+ [  1   6  26  91  11   1]
+ [  0   0   1   6 129   0]
+ [  0   0   0   0   0 137]]"
+"XGBClassifier(alpha=1.0, base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1.0,
+              enable_categorical=False, eta=0.1, eval_metric='mlogloss',
+              gamma=0.5, gpu_id=-1, importance_type=None,
+              interaction_constraints='', lambda=0.1,
+              learning_rate=0.0500000007, max_delta_step=0, max_depth=15,
+              min_child_weight=7, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=12, num_parallel_tree=1,
+              objective='multi:softprob', predictor='auto', random_state=0,
+              reg_alpha=1, reg_lambda=0.00999999978, scale_pos_weight=None,
+              subsample=0.6, ...)","OrderedDict([('alpha', 0.5), ('colsample_bytree', 0.9), ('eta', 0.015), ('gamma', 0.9), ('lambda', 1.0), ('max_depth', 12), ('min_child_weight', 1), ('subsample', 0.9)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.5106608000005508,5.7663936430619245e-05,2968.76953125,0.8946078431372548,0.8921777964583366,0.8907178299537809,0.8948655256723717,0.9820730692747377,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   4 102  28   2   0]
+ [  1   6  28  90  10   1]
+ [  0   0   1   5 130   0]
+ [  0   0   0   0   0 137]]"
+"XGBClassifier(alpha=1.0, base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1.0,
+              enable_categorical=False, eta=0.1, eval_metric='mlogloss',
+              gamma=0.5, gpu_id=-1, importance_type=None,
+              interaction_constraints='', lambda=0.1,
+              learning_rate=0.0500000007, max_delta_step=0, max_depth=15,
+              min_child_weight=7, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=12, num_parallel_tree=1,
+              objective='multi:softprob', predictor='auto', random_state=0,
+              reg_alpha=1, reg_lambda=0.00999999978, scale_pos_weight=None,
+              subsample=0.6, ...)","OrderedDict([('alpha', 0.0), ('colsample_bytree', 0.8), ('eta', 0.1), ('gamma', 0.7), ('lambda', 0.01), ('max_depth', 15), ('min_child_weight', 5), ('subsample', 0.8)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.209345299999768,6.106295843343185e-05,2958.76171875,0.8933823529411765,0.8903188815617047,0.8892648226619104,0.8936430317848411,0.9811929348475261,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   6 104  24   2   0]
+ [  1   7  30  87  10   1]
+ [  0   0   1   5 130   0]
+ [  0   0   0   0   0 137]]"
+"XGBClassifier(alpha=1.0, base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1.0,
+              enable_categorical=False, eta=0.1, eval_metric='mlogloss',
+              gamma=0.5, gpu_id=-1, importance_type=None,
+              interaction_constraints='', lambda=0.1,
+              learning_rate=0.0500000007, max_delta_step=0, max_depth=15,
+              min_child_weight=7, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=12, num_parallel_tree=1,
+              objective='multi:softprob', predictor='auto', random_state=0,
+              reg_alpha=1, reg_lambda=0.00999999978, scale_pos_weight=None,
+              subsample=0.6, ...)","OrderedDict([('alpha', 1.0), ('colsample_bytree', 0.7), ('eta', 0.015), ('gamma', 0.1), ('lambda', 0.1), ('max_depth', 9), ('min_child_weight', 3), ('subsample', 0.9)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.151558900000964,5.9461246942781076e-05,2945.47265625,0.8933823529411765,0.8909460508818177,0.8897210997769686,0.8936430317848411,0.9828313101836249,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   5 102  27   2   0]
+ [  0   5  30  89  12   0]
+ [  0   0   1   5 130   0]
+ [  0   0   0   0   0 137]]"
+"RandomForestClassifier(max_depth=15, max_features='log2', min_samples_leaf=2,
+                       min_samples_split=15, n_estimators=800, n_jobs=-1)","OrderedDict([('max_depth', 15), ('max_features', 'sqrt'), ('min_samples_leaf', 1), ('min_samples_split', 2), ('n_estimators', 500)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.8808611999993445,0.0011438544009792287,2672.21875,0.8933823529411765,0.8923808858645812,0.8914371846929534,0.8936430317848411,0.9870652259641929,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   3 101  32   0   0]
+ [  0   4  31  92   9   0]
+ [  0   0   1   7 128   0]
+ [  0   0   0   0   0 137]]"
+"XGBClassifier(alpha=1.0, base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1.0,
+              enable_categorical=False, eta=0.1, eval_metric='mlogloss',
+              gamma=0.5, gpu_id=-1, importance_type=None,
+              interaction_constraints='', lambda=0.1,
+              learning_rate=0.0500000007, max_delta_step=0, max_depth=15,
+              min_child_weight=7, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=12, num_parallel_tree=1,
+              objective='multi:softprob', predictor='auto', random_state=0,
+              reg_alpha=1, reg_lambda=0.00999999978, scale_pos_weight=None,
+              subsample=0.6, ...)","OrderedDict([('alpha', 1.0), ('colsample_bytree', 0.7), ('eta', 0.05), ('gamma', 0.1), ('lambda', 0.1), ('max_depth', 25), ('min_child_weight', 3), ('subsample', 0.7)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.2584659999993164,6.0124083127955104e-05,2945.99609375,0.8933823529411765,0.8913978114580969,0.8902400683195323,0.8936430317848411,0.9822720461177753,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   5  99  29   3   0]
+ [  0   4  27  93  12   0]
+ [  0   0   1   6 129   0]
+ [  0   0   0   0   0 137]]"
+"XGBClassifier(alpha=1.0, base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1.0,
+              enable_categorical=False, eta=0.1, eval_metric='mlogloss',
+              gamma=0.5, gpu_id=-1, importance_type=None,
+              interaction_constraints='', lambda=0.1,
+              learning_rate=0.0500000007, max_delta_step=0, max_depth=15,
+              min_child_weight=7, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=12, num_parallel_tree=1,
+              objective='multi:softprob', predictor='auto', random_state=0,
+              reg_alpha=1, reg_lambda=0.00999999978, scale_pos_weight=None,
+              subsample=0.6, ...)","OrderedDict([('alpha', 0.5), ('colsample_bytree', 0.9), ('eta', 0.05), ('gamma', 0.9), ('lambda', 0.1), ('max_depth', 12), ('min_child_weight', 3), ('subsample', 0.9)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.3126936000007845,5.919425427941916e-05,2956.265625,0.8933823529411765,0.8900853122706658,0.888892057253384,0.8936430317848411,0.9814905025394777,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   5 105  24   2   0]
+ [  2   6  29  86  12   1]
+ [  0   0   1   5 130   0]
+ [  0   0   0   0   0 137]]"
+"RandomForestClassifier(max_depth=15, max_features='log2', min_samples_leaf=2,
+                       min_samples_split=15, n_estimators=800, n_jobs=-1)","OrderedDict([('max_depth', None), ('max_features', 'log2'), ('min_samples_leaf', 1), ('min_samples_split', 2), ('n_estimators', 1200)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.9830081000000064,0.0023154650366750567,2741.98046875,0.8933823529411765,0.8927044106598435,0.8921180357180021,0.8936430317848411,0.9871709842330554,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   2  98  35   1   0]
+ [  0   3  29  95   9   0]
+ [  0   0   1   7 128   0]
+ [  0   0   0   0   0 137]]"
+"RandomForestClassifier(max_depth=15, max_features='log2', min_samples_leaf=2,
+                       min_samples_split=15, n_estimators=800, n_jobs=-1)","OrderedDict([('max_depth', 15), ('max_features', 'sqrt'), ('min_samples_leaf', 2), ('min_samples_split', 5), ('n_estimators', 800)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.4052471999984846,0.0021487145476761,2690.34375,0.8933823529411765,0.8915271148744578,0.890265343954567,0.8936430317848411,0.9841004094099765,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   4 101  30   1   0]
+ [  0   4  28  91  13   0]
+ [  0   0   1   6 129   0]
+ [  0   0   0   0   0 137]]"
+"XGBClassifier(alpha=1.0, base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1.0,
+              enable_categorical=False, eta=0.1, eval_metric='mlogloss',
+              gamma=0.5, gpu_id=-1, importance_type=None,
+              interaction_constraints='', lambda=0.1,
+              learning_rate=0.0500000007, max_delta_step=0, max_depth=15,
+              min_child_weight=7, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=12, num_parallel_tree=1,
+              objective='multi:softprob', predictor='auto', random_state=0,
+              reg_alpha=1, reg_lambda=0.00999999978, scale_pos_weight=None,
+              subsample=0.6, ...)","OrderedDict([('alpha', 0.1), ('colsample_bytree', 0.8), ('eta', 0.1), ('gamma', 0.9), ('lambda', 0.1), ('max_depth', 15), ('min_child_weight', 1), ('subsample', 0.8)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.5509281000013289,5.783606356865949e-05,2971.2265625,0.892156862745098,0.8892107522582178,0.8877094905699523,0.8924205378973105,0.9829514085567402,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   4 102  28   2   0]
+ [  1   6  30  87  11   1]
+ [  0   0   1   4 131   0]
+ [  0   0   0   0   0 137]]"
+"XGBClassifier(alpha=1.0, base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1.0,
+              enable_categorical=False, eta=0.1, eval_metric='mlogloss',
+              gamma=0.5, gpu_id=-1, importance_type=None,
+              interaction_constraints='', lambda=0.1,
+              learning_rate=0.0500000007, max_delta_step=0, max_depth=15,
+              min_child_weight=7, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=12, num_parallel_tree=1,
+              objective='multi:softprob', predictor='auto', random_state=0,
+              reg_alpha=1, reg_lambda=0.00999999978, scale_pos_weight=None,
+              subsample=0.6, ...)","OrderedDict([('alpha', 0.5), ('colsample_bytree', 0.7), ('eta', 0.015), ('gamma', 0.1), ('lambda', 0.1), ('max_depth', 9), ('min_child_weight', 3), ('subsample', 0.7)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.1166677000001073,6.108166259224043e-05,2954.66796875,0.892156862745098,0.8894395853220293,0.8882339995957184,0.8924205378973105,0.9812019158379282,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   5 103  25   3   0]
+ [  1   5  29  88  13   0]
+ [  0   0   1   6 129   0]
+ [  0   0   0   0   0 137]]"
+"XGBClassifier(alpha=1.0, base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1.0,
+              enable_categorical=False, eta=0.1, eval_metric='mlogloss',
+              gamma=0.5, gpu_id=-1, importance_type=None,
+              interaction_constraints='', lambda=0.1,
+              learning_rate=0.0500000007, max_delta_step=0, max_depth=15,
+              min_child_weight=7, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=12, num_parallel_tree=1,
+              objective='multi:softprob', predictor='auto', random_state=0,
+              reg_alpha=1, reg_lambda=0.00999999978, scale_pos_weight=None,
+              subsample=0.6, ...)","OrderedDict([('alpha', 0.1), ('colsample_bytree', 0.6), ('eta', 0.015), ('gamma', 0.9), ('lambda', 1.0), ('max_depth', 15), ('min_child_weight', 1), ('subsample', 0.7)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.4804936000000453,5.915586797036356e-05,2967.62890625,0.892156862745098,0.8893911312236016,0.8878307326985738,0.8924205378973105,0.981895605220257,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   4 100  29   3   0]
+ [  1   6  29  89  10   1]
+ [  0   0   1   4 131   0]
+ [  0   0   0   0   0 137]]"
+"XGBClassifier(alpha=1.0, base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1.0,
+              enable_categorical=False, eta=0.1, eval_metric='mlogloss',
+              gamma=0.5, gpu_id=-1, importance_type=None,
+              interaction_constraints='', lambda=0.1,
+              learning_rate=0.0500000007, max_delta_step=0, max_depth=15,
+              min_child_weight=7, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=12, num_parallel_tree=1,
+              objective='multi:softprob', predictor='auto', random_state=0,
+              reg_alpha=1, reg_lambda=0.00999999978, scale_pos_weight=None,
+              subsample=0.6, ...)","OrderedDict([('alpha', 1.0), ('colsample_bytree', 0.7), ('eta', 0.05), ('gamma', 0.3), ('lambda', 1.0), ('max_depth', 7), ('min_child_weight', 3), ('subsample', 0.9)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.9857081000009202,5.646980440129229e-05,2955.08984375,0.8909313725490197,0.8882456107962986,0.8868350746841566,0.89119804400978,0.9811230321036504,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   5 100  28   3   0]
+ [  0   6  29  89  11   1]
+ [  0   0   1   5 130   0]
+ [  0   0   0   0   0 137]]"
+"RandomForestClassifier(max_depth=15, max_features='log2', min_samples_leaf=2,
+                       min_samples_split=15, n_estimators=800, n_jobs=-1)","OrderedDict([('max_depth', 30), ('max_features', 'sqrt'), ('min_samples_leaf', 2), ('min_samples_split', 10), ('n_estimators', 500)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.7773188000010123,0.0007940955990233592,2667.3828125,0.8909313725490197,0.8889788382852896,0.8876361186205945,0.89119804400978,0.9820910023015867,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   4 100  30   2   0]
+ [  0   4  30  90  12   0]
+ [  0   0   1   6 129   0]
+ [  0   0   0   0   0 137]]"
+"RandomForestClassifier(max_depth=15, max_features='log2', min_samples_leaf=2,
+                       min_samples_split=15, n_estimators=800, n_jobs=-1)","OrderedDict([('max_depth', 25), ('max_features', 'sqrt'), ('min_samples_leaf', 1), ('min_samples_split', 15), ('n_estimators', 300)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.47798599999987346,0.0004903683374076178,2663.44140625,0.8884803921568628,0.8872385827429039,0.8861740723325824,0.8887530562347188,0.9809384006292211,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   4 101  29   2   0]
+ [  0   4  30  91  11   0]
+ [  0   0   1  10 125   0]
+ [  0   0   0   0   0 137]]"
+"RandomForestClassifier(max_depth=15, max_features='log2', min_samples_leaf=2,
+                       min_samples_split=15, n_estimators=800, n_jobs=-1)","OrderedDict([('max_depth', 25), ('max_features', 'log2'), ('min_samples_leaf', 1), ('min_samples_split', 15), ('n_estimators', 300)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.46135580000009213,0.0004917643031780586,2677.3828125,0.8872549019607843,0.8851156045961307,0.8836837433181184,0.8875305623471883,0.9813919064262082,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   5  99  30   2   0]
+ [  0   4  33  88  11   0]
+ [  0   0   1   6 129   0]
+ [  0   0   0   0   0 137]]"
+"XGBClassifier(alpha=1.0, base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1.0,
+              enable_categorical=False, eta=0.1, eval_metric='mlogloss',
+              gamma=0.5, gpu_id=-1, importance_type=None,
+              interaction_constraints='', lambda=0.1,
+              learning_rate=0.0500000007, max_delta_step=0, max_depth=15,
+              min_child_weight=7, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=12, num_parallel_tree=1,
+              objective='multi:softprob', predictor='auto', random_state=0,
+              reg_alpha=1, reg_lambda=0.00999999978, scale_pos_weight=None,
+              subsample=0.6, ...)","OrderedDict([('alpha', 0.5), ('colsample_bytree', 0.8), ('eta', 0.025), ('gamma', 0.3), ('lambda', 0.01), ('max_depth', 7), ('min_child_weight', 1), ('subsample', 0.7)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.0657199999986915,5.596687041559202e-05,2958.515625,0.8872549019607843,0.8837095172019896,0.8825111069642495,0.8875305623471883,0.9806103786409769,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   5 102  25   4   0]
+ [  1   6  32  84  12   1]
+ [  0   0   1   5 130   0]
+ [  0   0   0   0   0 137]]"
+"XGBClassifier(alpha=1.0, base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1.0,
+              enable_categorical=False, eta=0.1, eval_metric='mlogloss',
+              gamma=0.5, gpu_id=-1, importance_type=None,
+              interaction_constraints='', lambda=0.1,
+              learning_rate=0.0500000007, max_delta_step=0, max_depth=15,
+              min_child_weight=7, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=12, num_parallel_tree=1,
+              objective='multi:softprob', predictor='auto', random_state=0,
+              reg_alpha=1, reg_lambda=0.00999999978, scale_pos_weight=None,
+              subsample=0.6, ...)","OrderedDict([('alpha', 0.1), ('colsample_bytree', 0.8), ('eta', 0.025), ('gamma', 0.05), ('lambda', 0.1), ('max_depth', 17), ('min_child_weight', 7), ('subsample', 0.8)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.152072599999883,6.090562347288048e-05,2957.84765625,0.8872549019607843,0.8840148809790591,0.8825503907031351,0.8875305623471883,0.9806408408338027,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   7  98  28   3   0]
+ [  1   6  28  88  12   1]
+ [  0   0   1   5 130   0]
+ [  0   0   0   0   0 137]]"
+"XGBClassifier(alpha=1.0, base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1.0,
+              enable_categorical=False, eta=0.1, eval_metric='mlogloss',
+              gamma=0.5, gpu_id=-1, importance_type=None,
+              interaction_constraints='', lambda=0.1,
+              learning_rate=0.0500000007, max_delta_step=0, max_depth=15,
+              min_child_weight=7, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=12, num_parallel_tree=1,
+              objective='multi:softprob', predictor='auto', random_state=0,
+              reg_alpha=1, reg_lambda=0.00999999978, scale_pos_weight=None,
+              subsample=0.6, ...)","OrderedDict([('alpha', 0.5), ('colsample_bytree', 0.9), ('eta', 0.1), ('gamma', 0.5), ('lambda', 0.1), ('max_depth', 17), ('min_child_weight', 3), ('subsample', 0.7)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.2935839000001579,5.971405868025222e-05,2955.64453125,0.886029411764706,0.8827116053967279,0.8811227131049179,0.8863080684596577,0.9809760381385285,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   5 101  28   2   0]
+ [  1   6  32  84  12   1]
+ [  0   0   1   5 130   0]
+ [  0   0   0   0   0 137]]"
+"XGBClassifier(alpha=1.0, base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1.0,
+              enable_categorical=False, eta=0.1, eval_metric='mlogloss',
+              gamma=0.5, gpu_id=-1, importance_type=None,
+              interaction_constraints='', lambda=0.1,
+              learning_rate=0.0500000007, max_delta_step=0, max_depth=15,
+              min_child_weight=7, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=12, num_parallel_tree=1,
+              objective='multi:softprob', predictor='auto', random_state=0,
+              reg_alpha=1, reg_lambda=0.00999999978, scale_pos_weight=None,
+              subsample=0.6, ...)","OrderedDict([('alpha', 0.5), ('colsample_bytree', 1.0), ('eta', 0.01), ('gamma', 0.9), ('lambda', 0.01), ('max_depth', 17), ('min_child_weight', 3), ('subsample', 0.7)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.3142697999992379,5.883618581951194e-05,2956.1015625,0.886029411764706,0.882323098555061,0.8808004467485396,0.8863080684596577,0.9797409598092889,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   8  99  27   2   0]
+ [  3   7  28  86  11   1]
+ [  0   0   1   5 130   0]
+ [  0   0   0   0   0 137]]"
+"XGBClassifier(alpha=1.0, base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1.0,
+              enable_categorical=False, eta=0.1, eval_metric='mlogloss',
+              gamma=0.5, gpu_id=-1, importance_type=None,
+              interaction_constraints='', lambda=0.1,
+              learning_rate=0.0500000007, max_delta_step=0, max_depth=15,
+              min_child_weight=7, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=12, num_parallel_tree=1,
+              objective='multi:softprob', predictor='auto', random_state=0,
+              reg_alpha=1, reg_lambda=0.00999999978, scale_pos_weight=None,
+              subsample=0.6, ...)","OrderedDict([('alpha', 0.1), ('colsample_bytree', 0.8), ('eta', 0.1), ('gamma', 0.1), ('lambda', 1.0), ('max_depth', 17), ('min_child_weight', 7), ('subsample', 0.8)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.1264822000011918,6.206051344758561e-05,2947.26171875,0.8848039215686274,0.8817727276085321,0.8801397625601729,0.8850855745721271,0.9807878269023914,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   5  98  30   3   0]
+ [  1   7  28  87  12   1]
+ [  0   0   1   6 129   0]
+ [  0   0   0   0   0 137]]"
+"RandomForestClassifier(max_depth=15, max_features='log2', min_samples_leaf=2,
+                       min_samples_split=15, n_estimators=800, n_jobs=-1)","OrderedDict([('max_depth', 20), ('max_features', None), ('min_samples_leaf', 2), ('min_samples_split', 2), ('n_estimators', 800)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.849974900000234,0.0020953520782409337,2685.89453125,0.8848039215686274,0.8827969541386541,0.8813390261962687,0.8850855745721271,0.9816621626420721,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   5  98  32   1   0]
+ [  2   6  32  88   8   0]
+ [  0   0   0   8 128   0]
+ [  0   0   0   0   0 137]]"
+"RandomForestClassifier(max_depth=15, max_features='log2', min_samples_leaf=2,
+                       min_samples_split=15, n_estimators=800, n_jobs=-1)","OrderedDict([('max_depth', 15), ('max_features', 'sqrt'), ('min_samples_leaf', 2), ('min_samples_split', 10), ('n_estimators', 800)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.2255903000004764,0.0013128805623463715,2665.69921875,0.8835784313725491,0.8814679462278515,0.8802295872965473,0.8838630806845966,0.9816697617391679,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   5 103  26   2   0]
+ [  0   4  34  85  13   0]
+ [  0   0   1  10 125   0]
+ [  0   0   0   0   0 137]]"
+"RandomForestClassifier(max_depth=15, max_features='log2', min_samples_leaf=2,
+                       min_samples_split=15, n_estimators=800, n_jobs=-1)","OrderedDict([('max_depth', 15), ('max_features', 'log2'), ('min_samples_leaf', 2), ('min_samples_split', 10), ('n_estimators', 1200)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.8465310000010504,0.001833989242055164,2685.390625,0.8823529411764706,0.8808038120901975,0.8795693423284823,0.882640586797066,0.981501257617667,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   5  98  31   2   0]
+ [  0   4  31  89  12   0]
+ [  0   0   1  10 125   0]
+ [  0   0   0   0   0 137]]"
+"RandomForestClassifier(max_depth=15, max_features='log2', min_samples_leaf=2,
+                       min_samples_split=15, n_estimators=800, n_jobs=-1)","OrderedDict([('max_depth', 15), ('max_features', None), ('min_samples_leaf', 2), ('min_samples_split', 5), ('n_estimators', 800)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.7144764000004216,0.001268290220048046,2666.85546875,0.8823529411764706,0.8797379989028176,0.8781443133219023,0.882640586797066,0.9808644680212464,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   6  96  32   2   0]
+ [  3   6  29  88  10   0]
+ [  0   0   0   8 128   0]
+ [  0   0   0   0   0 137]]"
+"XGBClassifier(alpha=1.0, base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1.0,
+              enable_categorical=False, eta=0.1, eval_metric='mlogloss',
+              gamma=0.5, gpu_id=-1, importance_type=None,
+              interaction_constraints='', lambda=0.1,
+              learning_rate=0.0500000007, max_delta_step=0, max_depth=15,
+              min_child_weight=7, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=12, num_parallel_tree=1,
+              objective='multi:softprob', predictor='auto', random_state=0,
+              reg_alpha=1, reg_lambda=0.00999999978, scale_pos_weight=None,
+              subsample=0.6, ...)","OrderedDict([('alpha', 0.0), ('colsample_bytree', 0.6), ('eta', 0.05), ('gamma', 0.5), ('lambda', 0.1), ('max_depth', 7), ('min_child_weight', 5), ('subsample', 1.0)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.7695087000010972,5.90409535460597e-05,2947.625,0.8811274509803922,0.8768251945379725,0.8756118777837837,0.8814180929095354,0.9801156371477303,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   6 102  25   3   0]
+ [  1   8  32  80  14   1]
+ [  0   0   1   6 129   0]
+ [  0   0   0   0   0 137]]"
+"RandomForestClassifier(max_depth=15, max_features='log2', min_samples_leaf=2,
+                       min_samples_split=15, n_estimators=800, n_jobs=-1)","OrderedDict([('max_depth', None), ('max_features', None), ('min_samples_leaf', 2), ('min_samples_split', 5), ('n_estimators', 800)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.6592283000009047,0.0013192315403420828,2685.48046875,0.8811274509803922,0.8785782244508428,0.8767832378457439,0.8814180929095354,0.9814470268599732,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   6  97  32   1   0]
+ [  3   5  32  86  10   0]
+ [  0   0   0   8 128   0]
+ [  0   0   0   0   0 137]]"
+"RandomForestClassifier(max_depth=15, max_features='log2', min_samples_leaf=2,
+                       min_samples_split=15, n_estimators=800, n_jobs=-1)","OrderedDict([('max_depth', 15), ('max_features', 'sqrt'), ('min_samples_leaf', 2), ('min_samples_split', 15), ('n_estimators', 800)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.238370600000053,0.001312933863081012,2663.73828125,0.8774509803921569,0.8751225379564858,0.8735963321722803,0.8777506112469438,0.9794667421659469,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   6  99  29   2   0]
+ [  0   5  34  84  13   0]
+ [  0   0   1  10 125   0]
+ [  0   0   0   0   0 137]]"
+"RandomForestClassifier(max_depth=15, max_features='log2', min_samples_leaf=2,
+                       min_samples_split=15, n_estimators=800, n_jobs=-1)","OrderedDict([('max_depth', 15), ('max_features', 'log2'), ('min_samples_leaf', 2), ('min_samples_split', 15), ('n_estimators', 800)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.2287897000005614,0.0013075377750603437,2664.86328125,0.8762254901960785,0.8739271378763106,0.872393605384531,0.8765281173594132,0.9793358887146422,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   6  97  31   2   0]
+ [  0   6  32  85  13   0]
+ [  0   0   1  10 125   0]
+ [  0   0   0   0   0 137]]"
+"XGBClassifier(alpha=1.0, base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1.0,
+              enable_categorical=False, eta=0.1, eval_metric='mlogloss',
+              gamma=0.5, gpu_id=-1, importance_type=None,
+              interaction_constraints='', lambda=0.1,
+              learning_rate=0.0500000007, max_delta_step=0, max_depth=15,
+              min_child_weight=7, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=12, num_parallel_tree=1,
+              objective='multi:softprob', predictor='auto', random_state=0,
+              reg_alpha=1, reg_lambda=0.00999999978, scale_pos_weight=None,
+              subsample=0.6, ...)","OrderedDict([('alpha', 0.5), ('colsample_bytree', 0.7), ('eta', 0.015), ('gamma', 0.5), ('lambda', 0.01), ('max_depth', 9), ('min_child_weight', 7), ('subsample', 0.7)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.0009079999999813,6.1000122249467e-05,2945.2109375,0.8762254901960785,0.8715956095778091,0.8702750265738854,0.8765281173594132,0.977308477510605,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   8  97  28   3   0]
+ [  1   8  31  80  16   0]
+ [  0   0   1   5 130   0]
+ [  0   0   0   0   0 137]]"
+DecisionTreeClassifier(criterion='entropy'),"OrderedDict([('criterion', 'entropy')])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.014742600000317907,1.1879706601382427e-05,2859.55078125,0.875,0.8704457178358934,0.8698561926001395,0.8753056234718827,0.9251994866958629,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   7  85  36   7   1]
+ [  0   8  24  91  12   1]
+ [  0   0   1   3 130   2]
+ [  0   0   0   0   0 137]]"
+DecisionTreeClassifier(criterion='entropy'),"OrderedDict([('criterion', 'entropy')])","('sulphates', 'pH', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",8,0.01333399999930407,1.401466992573413e-05,2859.81640625,0.8737745098039215,0.8698373728823093,0.8674997882165213,0.8740831295843521,0.9244771144728514,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  1   3  95  32   4   1]
+ [  2   5  36  80  13   0]
+ [  0   0   0   6 130   0]
+ [  0   0   0   0   0 137]]"
+"RandomForestClassifier(max_depth=15, max_features='log2', min_samples_leaf=2,
+                       min_samples_split=15, n_estimators=800, n_jobs=-1)","OrderedDict([('max_depth', None), ('max_features', 'sqrt'), ('min_samples_leaf', 5), ('min_samples_split', 2), ('n_estimators', 500)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.8145996000002924,0.0007896542787274148,2741.45703125,0.8713235294117648,0.8681176633599105,0.8663497270240192,0.871638141809291,0.9785686694475308,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  1   8  96  29   2   0]
+ [  0   7  33  82  14   0]
+ [  0   0   0  11 125   0]
+ [  0   0   0   0   0 137]]"
+DecisionTreeClassifier(criterion='entropy'),"OrderedDict([('criterion', 'gini')])","('sulphates', 'pH', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",8,0.010809999999764841,1.4431173593679119e-05,2859.9765625,0.8713235294117646,0.8684858535483645,0.8666361921637094,0.871638141809291,0.9230097622523371,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   4  86  40   6   0]
+ [  1   6  33  88   8   0]
+ [  0   0   3   4 129   0]
+ [  0   0   0   0   0 137]]"
+DecisionTreeClassifier(criterion='entropy'),"OrderedDict([('criterion', 'gini')])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.01168149999830348,1.2563325185232659e-05,2859.70703125,0.8713235294117646,0.8677928452858744,0.8669063804127031,0.871638141809291,0.9230086856916472,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   6  84  39   7   0]
+ [  1   5  28  90  12   0]
+ [  0   0   1   6 129   0]
+ [  0   0   0   0   0 137]]"
+HistGradientBoostingClassifier(),"OrderedDict([('warm_start', True)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.05024599999887869,0.00020456687041560745,2714.921875,0.8705274080435093,0.8738818088324102,0.8931356194137707,0.8704156479217604,0.9835593205313264,"[[116   0  12   8   0   0]
+ [  0 106  20  11   0   0]
+ [  0   0 128   7   1   0]
+ [  0   0  10 125   1   0]
+ [  0   0   3  16 117   0]
+ [  0   0   0   4  13 120]]"
+"XGBClassifier(alpha=1.0, base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1.0,
+              enable_categorical=False, eta=0.1, eval_metric='mlogloss',
+              gamma=0.5, gpu_id=-1, importance_type=None,
+              interaction_constraints='', lambda=0.1,
+              learning_rate=0.0500000007, max_delta_step=0, max_depth=15,
+              min_child_weight=7, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=12, num_parallel_tree=1,
+              objective='multi:softprob', predictor='auto', random_state=0,
+              reg_alpha=1, reg_lambda=0.00999999978, scale_pos_weight=None,
+              subsample=0.6, ...)","OrderedDict([('alpha', 1.0), ('colsample_bytree', 1.0), ('eta', 0.1), ('gamma', 0.5), ('lambda', 0.1), ('max_depth', 15), ('min_child_weight', 7), ('subsample', 0.6)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.043743899999754,6.035806846074546e-05,2953.20703125,0.868872549019608,0.865601294591533,0.8635230036698616,0.8691931540342298,0.9750122183057873,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   6  98  30   2   0]
+ [  2   7  35  79  12   1]
+ [  0   0   1  11 124   0]
+ [  0   0   0   0   0 137]]"
+"XGBClassifier(alpha=1.0, base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1.0,
+              enable_categorical=False, eta=0.1, eval_metric='mlogloss',
+              gamma=0.5, gpu_id=-1, importance_type=None,
+              interaction_constraints='', lambda=0.1,
+              learning_rate=0.0500000007, max_delta_step=0, max_depth=15,
+              min_child_weight=7, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=12, num_parallel_tree=1,
+              objective='multi:softprob', predictor='auto', random_state=0,
+              reg_alpha=1, reg_lambda=0.00999999978, scale_pos_weight=None,
+              subsample=0.6, ...)","OrderedDict([('alpha', 1.0), ('colsample_bytree', 0.9), ('eta', 0.015), ('gamma', 0.1), ('lambda', 0.1), ('max_depth', 5), ('min_child_weight', 1), ('subsample', 1.0)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.6451499999984662,5.136845965751175e-05,2946.79296875,0.8627450980392156,0.858277778585105,0.8557932851086425,0.863080684596577,0.9744510696006857,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   7  93  32   4   0]
+ [  3   8  31  78  14   2]
+ [  0   0   1  10 125   0]
+ [  0   0   0   0   0 137]]"
+"XGBClassifier(alpha=1.0, base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1.0,
+              enable_categorical=False, eta=0.1, eval_metric='mlogloss',
+              gamma=0.5, gpu_id=-1, importance_type=None,
+              interaction_constraints='', lambda=0.1,
+              learning_rate=0.0500000007, max_delta_step=0, max_depth=15,
+              min_child_weight=7, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=12, num_parallel_tree=1,
+              objective='multi:softprob', predictor='auto', random_state=0,
+              reg_alpha=1, reg_lambda=0.00999999978, scale_pos_weight=None,
+              subsample=0.6, ...)","OrderedDict([('alpha', 0.5), ('colsample_bytree', 1.0), ('eta', 0.1), ('gamma', 0.5), ('lambda', 1.0), ('max_depth', 5), ('min_child_weight', 3), ('subsample', 0.7)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.7730296000008821,5.033374083082748e-05,2943.26953125,0.8602941176470589,0.8552067049978099,0.8527525511968038,0.8606356968215159,0.9707581058255262,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   8  98  26   4   0]
+ [  3   9  33  74  14   3]
+ [  0   0   1  13 122   0]
+ [  0   0   0   0   0 137]]"
+"SVC(C=0.01, gamma='auto', probability=True)","OrderedDict([('C', 1000.0), ('class_weight', 'balanced'), ('gamma', 'scale')])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,3.758338900000126,0.0005304028117366537,2416.0,0.8590686274509803,0.8556093523075673,0.8545301486875926,0.8594132029339854,0.96684758466476,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  1  14  81  35   5   0]
+ [  0   4  31  90  10   1]
+ [  0   0   3  11 122   0]
+ [  0   0   0   0   0 137]]"
+"SVC(C=0.01, gamma='auto', probability=True)","OrderedDict([('C', 1000.0), ('class_weight', None), ('gamma', 'scale')])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,3.682546199999706,0.0005335808068460484,2415.35546875,0.8590686274509803,0.8556093523075673,0.8545301486875926,0.8594132029339854,0.9669963685107357,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  1  14  81  35   5   0]
+ [  0   4  31  90  10   1]
+ [  0   0   3  11 122   0]
+ [  0   0   0   0   0 137]]"
+"RandomForestClassifier(max_depth=15, max_features='log2', min_samples_leaf=2,
+                       min_samples_split=15, n_estimators=800, n_jobs=-1)","OrderedDict([('max_depth', 25), ('max_features', None), ('min_samples_leaf', 5), ('min_samples_split', 5), ('n_estimators', 800)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.6685304000002361,0.0013059372860639944,2662.83984375,0.8566176470588235,0.8502946684344851,0.8478587154865458,0.8569682151589242,0.9747804866431248,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  1  10  96  27   2   0]
+ [  3   9  36  70  17   1]
+ [  0   0   0  11 125   0]
+ [  0   0   0   0   0 137]]"
+"RandomForestClassifier(max_depth=15, max_features='log2', min_samples_leaf=2,
+                       min_samples_split=15, n_estimators=800, n_jobs=-1)","OrderedDict([('max_depth', 25), ('max_features', None), ('min_samples_leaf', 5), ('min_samples_split', 5), ('n_estimators', 500)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.0311595999992278,0.0008223720048917506,2648.6953125,0.8566176470588235,0.8508841273945505,0.848545979869947,0.8569682151589242,0.9750654883186111,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  1  11  92  30   2   0]
+ [  3   8  31  74  19   1]
+ [  0   0   0  11 125   0]
+ [  0   0   0   0   0 137]]"
+GradientBoostingClassifier(),"OrderedDict([('loss', 'deviance')])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,2.2165091000006214,4.7469193153793486e-05,2703.06640625,0.8529411764705882,0.8480446851216998,0.8455491974589922,0.8533007334963325,0.9690337556683553,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   8  87  38   3   0]
+ [  0   9  36  74  17   0]
+ [  0   0   1   8 127   0]
+ [  0   0   0   0   0 137]]"
+"XGBClassifier(alpha=1.0, base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1.0,
+              enable_categorical=False, eta=0.1, eval_metric='mlogloss',
+              gamma=0.5, gpu_id=-1, importance_type=None,
+              interaction_constraints='', lambda=0.1,
+              learning_rate=0.0500000007, max_delta_step=0, max_depth=15,
+              min_child_weight=7, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=12, num_parallel_tree=1,
+              objective='multi:softprob', predictor='auto', random_state=0,
+              reg_alpha=1, reg_lambda=0.00999999978, scale_pos_weight=None,
+              subsample=0.6, ...)","OrderedDict([('alpha', 0.5), ('colsample_bytree', 0.8), ('eta', 0.05), ('gamma', 0.3), ('lambda', 0.1), ('max_depth', 5), ('min_child_weight', 5), ('subsample', 0.8)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.7723045000002458,5.227090464348089e-05,2941.77734375,0.8504901960784315,0.8454257207643464,0.8433389675165146,0.8508557457212714,0.9709392154461579,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0  12  91  29   4   0]
+ [  3   9  30  75  18   1]
+ [  0   0   2  14 120   0]
+ [  0   0   0   0   0 137]]"
+"RandomForestClassifier(max_depth=15, max_features='log2', min_samples_leaf=2,
+                       min_samples_split=15, n_estimators=800, n_jobs=-1)","OrderedDict([('max_depth', 20), ('max_features', 'sqrt'), ('min_samples_leaf', 10), ('min_samples_split', 15), ('n_estimators', 1200)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.6961509000011574,0.0018283235941322115,2652.16796875,0.8468137254901961,0.8395401848699915,0.8380837653102411,0.8471882640586798,0.9706704385141759,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  1  12  91  27   5   0]
+ [  0  12  34  68  21   1]
+ [  0   1   0  11 124   0]
+ [  0   0   0   0   0 137]]"
+"RandomForestClassifier(max_depth=15, max_features='log2', min_samples_leaf=2,
+                       min_samples_split=15, n_estimators=800, n_jobs=-1)","OrderedDict([('max_depth', 20), ('max_features', 'log2'), ('min_samples_leaf', 10), ('min_samples_split', 2), ('n_estimators', 300)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.4538714999998774,0.0005084744498763163,2670.2109375,0.8455882352941178,0.8372817746049879,0.8365579531094268,0.8459657701711492,0.9705091412952899,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  1  14  92  24   5   0]
+ [  0  11  37  66  21   1]
+ [  0   1   0   9 124   2]
+ [  0   0   0   0   0 137]]"
+"RandomForestClassifier(max_depth=15, max_features='log2', min_samples_leaf=2,
+                       min_samples_split=15, n_estimators=800, n_jobs=-1)","OrderedDict([('max_depth', 20), ('max_features', 'sqrt'), ('min_samples_leaf', 10), ('min_samples_split', 5), ('n_estimators', 500)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.7308912999997119,0.00078327518337389,2663.53515625,0.8431372549019608,0.835269077827774,0.8338109618512777,0.843520782396088,0.9711221886486199,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  1  13  89  28   5   0]
+ [  0  12  36  67  21   0]
+ [  0   1   0   9 124   2]
+ [  0   0   0   0   0 137]]"
+"RandomForestClassifier(max_depth=15, max_features='log2', min_samples_leaf=2,
+                       min_samples_split=15, n_estimators=800, n_jobs=-1)","OrderedDict([('max_depth', 20), ('max_features', 'sqrt'), ('min_samples_leaf', 10), ('min_samples_split', 10), ('n_estimators', 800)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.14892300000065,0.0012415146699260202,2639.0546875,0.8406862745098039,0.8331988288711254,0.831914014646245,0.8410757946210269,0.97081024136975,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  1  15  88  27   5   0]
+ [  0  12  36  67  21   0]
+ [  0   1   0  12 123   0]
+ [  0   0   0   0   0 137]]"
+"RandomForestClassifier(max_depth=15, max_features='log2', min_samples_leaf=2,
+                       min_samples_split=15, n_estimators=800, n_jobs=-1)","OrderedDict([('max_depth', 30), ('max_features', 'sqrt'), ('min_samples_leaf', 10), ('min_samples_split', 5), ('n_estimators', 1200)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.7194240000007994,0.001821296332518458,2671.71875,0.8406862745098039,0.8323958185018739,0.8307235941889651,0.8410757946210269,0.9708533116938846,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  1  13  90  27   5   0]
+ [  0  12  37  65  21   1]
+ [  0   1   0  10 123   2]
+ [  0   0   0   0   0 137]]"
+"RandomForestClassifier(max_depth=15, max_features='log2', min_samples_leaf=2,
+                       min_samples_split=15, n_estimators=800, n_jobs=-1)","OrderedDict([('max_depth', 30), ('max_features', 'sqrt'), ('min_samples_leaf', 10), ('min_samples_split', 10), ('n_estimators', 120)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.21750410000095144,0.0002257356968217734,2690.01953125,0.8394607843137255,0.8312425905062718,0.829585205008949,0.8398533007334963,0.9695358330409247,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  1  15  88  26   6   0]
+ [  0  10  37  66  22   1]
+ [  0   0   0  11 123   2]
+ [  0   0   0   0   0 137]]"
+"SVC(C=0.01, gamma='auto', probability=True)","OrderedDict([('C', 100.0), ('class_weight', 'balanced'), ('gamma', 'scale')])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.4961751000000731,0.0006175816625918986,2415.31640625,0.8259803921568626,0.819563544331688,0.8179929556239006,0.8264058679706602,0.9595053354716304,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  1  22  74  35   4   0]
+ [  0   9  36  74  15   2]
+ [  0   0   3  15 118   0]
+ [  0   0   0   0   0 137]]"
+"SVC(C=0.01, gamma='auto', probability=True)","OrderedDict([('C', 100.0), ('class_weight', None), ('gamma', 'scale')])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.5241329999998925,0.0006078926650369993,2415.5546875,0.8259803921568626,0.819563544331688,0.8179929556239006,0.8264058679706602,0.9592059357839813,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  1  22  74  35   4   0]
+ [  0   9  36  74  15   2]
+ [  0   0   3  15 118   0]
+ [  0   0   0   0   0 137]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=9, p=3)","OrderedDict([('n_neighbors', 3), ('p', 3)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.006176199999572418,0.0002305913202932519,2412.30078125,0.8186274509803922,0.8109747921321889,0.8081158480164744,0.8190709046454768,0.9450214669360206,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0  14  80  35   7   0]
+ [  1  11  32  65  26   1]
+ [  0   0   6  13 115   2]
+ [  0   0   0   0   0 137]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=9, p=3)","OrderedDict([('n_neighbors', 3), ('p', 2)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.006258200000047509,0.00018145806845945014,2412.87109375,0.8186274509803922,0.8114379213832833,0.8087706834403295,0.8190709046454768,0.9437577452487639,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0  10  80  38   8   0]
+ [  1  10  32  63  30   0]
+ [  0   0   6  13 117   0]
+ [  0   0   0   0   0 137]]"
+"RandomForestClassifier(max_depth=15, max_features='log2', min_samples_leaf=2,
+                       min_samples_split=15, n_estimators=800, n_jobs=-1)","OrderedDict([('max_depth', 8), ('max_features', None), ('min_samples_leaf', 2), ('min_samples_split', 15), ('n_estimators', 1200)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,2.0910709999989194,0.0018312257946208306,2675.0,0.8088235294117646,0.798841150932881,0.7944343563955775,0.8092909535452323,0.9621910543250002,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  1  18  78  33   6   0]
+ [  3   9  38  58  24   4]
+ [  0   0   4  16 116   0]
+ [  0   0   0   0   0 137]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=9, p=3)","OrderedDict([('n_neighbors', 5), ('p', 3)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.006144599999970524,0.0002421951100235394,2412.7734375,0.801470588235294,0.792466571270467,0.7913834875516801,0.8019559902200489,0.9497671451871014,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0  19  77  34   6   0]
+ [  1  16  28  59  30   2]
+ [  0   0   2  22 110   2]
+ [  0   0   0   0   0 137]]"
+"RandomForestClassifier(max_depth=15, max_features='log2', min_samples_leaf=2,
+                       min_samples_split=15, n_estimators=800, n_jobs=-1)","OrderedDict([('max_depth', 25), ('max_features', 'log2'), ('min_samples_leaf', 5), ('min_samples_split', 100), ('n_estimators', 800)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.0845743999998376,0.0012145649144260865,2689.80859375,0.7917292829540576,0.7779607967413805,0.7762869912569704,0.7921760391198044,0.9510853042580034,"[[136   0   0   0   0   0]
+ [  2 130   3   2   0   0]
+ [  2  21  79  23  11   0]
+ [  2  16  37  51  27   3]
+ [  0   1   4  11 115   5]
+ [  0   0   0   0   0 137]]"
+"RandomForestClassifier(max_depth=15, max_features='log2', min_samples_leaf=2,
+                       min_samples_split=15, n_estimators=800, n_jobs=-1)","OrderedDict([('max_depth', 30), ('max_features', 'sqrt'), ('min_samples_leaf', 1), ('min_samples_split', 100), ('n_estimators', 500)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.6828072999996948,0.0008058996332528359,2668.01171875,0.7917292829540576,0.7791093431493809,0.7762198765031314,0.7921760391198044,0.9532043020860249,"[[136   0   0   0   0   0]
+ [  2 130   3   2   0   0]
+ [  0  20  80  25  11   0]
+ [  2  16  38  51  27   2]
+ [  0   1   2  14 114   5]
+ [  0   0   0   0   0 137]]"
+"XGBClassifier(alpha=1.0, base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1.0,
+              enable_categorical=False, eta=0.1, eval_metric='mlogloss',
+              gamma=0.5, gpu_id=-1, importance_type=None,
+              interaction_constraints='', lambda=0.1,
+              learning_rate=0.0500000007, max_delta_step=0, max_depth=15,
+              min_child_weight=7, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=12, num_parallel_tree=1,
+              objective='multi:softprob', predictor='auto', random_state=0,
+              reg_alpha=1, reg_lambda=0.00999999978, scale_pos_weight=None,
+              subsample=0.6, ...)","OrderedDict([('alpha', 0.5), ('colsample_bytree', 0.9), ('eta', 0.1), ('gamma', 0.5), ('lambda', 0.1), ('max_depth', 3), ('min_child_weight', 3), ('subsample', 0.6)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.5859909999999218,4.7673105134775013e-05,2947.41015625,0.7868720480893088,0.773720154827698,0.770736150498004,0.7872860635696821,0.9501194898136249,"[[136   0   0   0   0   0]
+ [  6 125   3   3   0   0]
+ [  0  22  82  25   6   1]
+ [  4  16  35  53  23   5]
+ [  1   1   1  11 111  11]
+ [  0   0   0   0   0 137]]"
+"SVC(C=0.01, gamma='auto', probability=True)","OrderedDict([('C', 10.0), ('class_weight', 'balanced'), ('gamma', 'scale')])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.1169401999995898,0.0008043876528118858,2415.75390625,0.7819790324889079,0.7768049781911257,0.7750368467446989,0.78239608801956,0.9484987711257138,"[[136   0   0   0   0   0]
+ [  3 124   5   5   0   0]
+ [  1  22  77  33   3   0]
+ [  4  12  36  63  15   6]
+ [  0   1   3  27 103   2]
+ [  0   0   0   0   0 137]]"
+"SVC(C=0.01, gamma='auto', probability=True)","OrderedDict([('C', 10.0), ('class_weight', None), ('gamma', 'scale')])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.1166196000003765,0.000805338753055929,2415.6796875,0.7819790324889079,0.7768049781911257,0.7750368467446989,0.78239608801956,0.9483354708195777,"[[136   0   0   0   0   0]
+ [  3 124   5   5   0   0]
+ [  1  22  77  33   3   0]
+ [  4  12  36  63  15   6]
+ [  0   1   3  27 103   2]
+ [  0   0   0   0   0 137]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=9, p=3)","OrderedDict([('n_neighbors', 7), ('p', 3)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.00622780000048806,0.00025683936430323675,2413.0078125,0.7806372549019608,0.7661757882138083,0.7634721272601359,0.7811735941320294,0.9502402435989938,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0  25  75  28   8   0]
+ [  1  18  33  46  33   5]
+ [  0   0   2  23 108   3]
+ [  0   0   0   0   0 137]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=9, p=3)","OrderedDict([('n_neighbors', 7), ('p', 2)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.006139600000096834,0.00018681882640570428,2412.859375,0.7769607843137255,0.7640769421137786,0.7605661555202987,0.7775061124694377,0.9479188852634677,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0  19  74  35   8   0]
+ [  1  18  31  46  35   5]
+ [  0   0   2  25 106   3]
+ [  0   0   0   0   0 137]]"
+"RandomForestClassifier(max_depth=15, max_features='log2', min_samples_leaf=2,
+                       min_samples_split=15, n_estimators=800, n_jobs=-1)","OrderedDict([('max_depth', None), ('max_features', None), ('min_samples_leaf', 1), ('min_samples_split', 100), ('n_estimators', 500)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.8290998999982548,0.0007824146699251136,2666.3359375,0.7758426363246028,0.759228054997488,0.7581814011262503,0.7762836185819071,0.9458539365728765,"[[136   0   0   0   0   0]
+ [  6 125   4   2   0   0]
+ [  5  26  68  28   9   0]
+ [  5  19  28  50  29   5]
+ [  1   2   5   9 119   0]
+ [  0   0   0   0   0 137]]"
+"XGBClassifier(alpha=1.0, base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1.0,
+              enable_categorical=False, eta=0.1, eval_metric='mlogloss',
+              gamma=0.5, gpu_id=-1, importance_type=None,
+              interaction_constraints='', lambda=0.1,
+              learning_rate=0.0500000007, max_delta_step=0, max_depth=15,
+              min_child_weight=7, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=12, num_parallel_tree=1,
+              objective='multi:softprob', predictor='auto', random_state=0,
+              reg_alpha=1, reg_lambda=0.00999999978, scale_pos_weight=None,
+              subsample=0.6, ...)","OrderedDict([('alpha', 0.5), ('colsample_bytree', 0.7), ('eta', 0.05), ('gamma', 0.3), ('lambda', 1.0), ('max_depth', 3), ('min_child_weight', 5), ('subsample', 0.7)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.5727077999999892,4.4681051346135536e-05,2941.7734375,0.7746618720480893,0.7643564762708358,0.75936831480656,0.7750611246943765,0.9494367950376587,"[[136   0   0   0   0   0]
+ [  6 123   1   7   0   0]
+ [  0  21  83  25   7   0]
+ [  3  13  37  53  24   6]
+ [  0   1   1  19 105  10]
+ [  0   0   0   0   3 134]]"
+"XGBClassifier(alpha=1.0, base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1.0,
+              enable_categorical=False, eta=0.1, eval_metric='mlogloss',
+              gamma=0.5, gpu_id=-1, importance_type=None,
+              interaction_constraints='', lambda=0.1,
+              learning_rate=0.0500000007, max_delta_step=0, max_depth=15,
+              min_child_weight=7, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=12, num_parallel_tree=1,
+              objective='multi:softprob', predictor='auto', random_state=0,
+              reg_alpha=1, reg_lambda=0.00999999978, scale_pos_weight=None,
+              subsample=0.6, ...)","OrderedDict([('alpha', 0.1), ('colsample_bytree', 0.8), ('eta', 0.1), ('gamma', 0.5), ('lambda', 0.1), ('max_depth', 3), ('min_child_weight', 1), ('subsample', 0.8)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.5727626999996573,4.71848410740203e-05,2945.41015625,0.7746082009446114,0.7627031114898318,0.7587211291146249,0.7750611246943765,0.951593264547791,"[[136   0   0   0   0   0]
+ [  4 126   2   5   0   0]
+ [  0  24  78  28   6   0]
+ [  3  16  36  52  23   6]
+ [  1   3   1  17 105   9]
+ [  0   0   0   0   0 137]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=9, p=3)","OrderedDict([('n_neighbors', 9), ('p', 2)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.006381600000167964,0.000199680195598658,2412.7734375,0.7683823529411765,0.7547104196210781,0.7527829494029599,0.7689486552567237,0.9447334606296597,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  1  23  64  41   7   0]
+ [  1  20  29  50  29   7]
+ [  0   0   4  23 105   4]
+ [  0   0   0   0   0 137]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=9, p=3)","OrderedDict([('n_neighbors', 9), ('p', 3)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.0061751000002914225,0.000272082518336826,2412.921875,0.7671568627450981,0.7542300525316146,0.7522116146870448,0.7677261613691931,0.9467491599589039,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  1  28  67  33   7   0]
+ [  1  18  34  51  27   5]
+ [  0   1   3  27 100   5]
+ [  0   0   0   0   0 137]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=9, p=3)","OrderedDict([('n_neighbors', 11), ('p', 2)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.006193600000187871,0.00019389156479257045,2412.53125,0.7585784313725491,0.7438805716860124,0.7443036408295628,0.7591687041564792,0.9436427993635479,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  2  26  62  37   9   0]
+ [  1  24  26  52  25   8]
+ [  0   2   6  24  97   7]
+ [  0   0   0   0   0 137]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=9, p=3)","OrderedDict([('n_neighbors', 13), ('p', 2)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.006185100000038801,0.00020778936430334088,2412.69140625,0.7561274509803922,0.7407555020849962,0.7404922190274574,0.7567237163814181,0.9414347325895368,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  2  30  65  32   7   0]
+ [  1  24  28  49  26   8]
+ [  0   2   8  24  95   7]
+ [  0   0   0   0   0 137]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=9, p=3)","OrderedDict([('n_neighbors', 15), ('p', 3)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.006142799999906856,0.00031044559902226903,2412.18359375,0.750035780735652,0.7360438817376538,0.7369681249053469,0.7506112469437652,0.942541244829916,"[[136   0   0   0   0   0]
+ [  2 133   0   0   2   0]
+ [  4  30  67  28   7   0]
+ [  1  25  29  52  20   9]
+ [  0   4   7  29  89   7]
+ [  0   0   0   0   0 137]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=9, p=3)","OrderedDict([('n_neighbors', 11), ('p', 3)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.006227700000636105,0.00028437848410773785,2412.515625,0.75,0.7357632835686392,0.7336683367255196,0.7506112469437652,0.9448747914644037,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  3  28  65  29  11   0]
+ [  1  21  34  50  24   6]
+ [  0   2   6  32  89   7]
+ [  0   0   0   0   0 137]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=9, p=3)","OrderedDict([('n_neighbors', 17), ('p', 2)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.006099700000049779,0.0002129867970667445,2412.75,0.7476116358952339,0.7318846461600933,0.7332559267752318,0.7481662591687042,0.9387393786496,"[[136   0   0   0   0   0]
+ [  2 130   1   2   2   0]
+ [  3  35  65  25   8   0]
+ [  2  27  26  49  20  12]
+ [  0   1   7  25  95   8]
+ [  0   0   0   0   0 137]]"
+"SVC(C=0.01, gamma='auto', probability=True)","OrderedDict([('C', 1000.0), ('class_weight', 'balanced'), ('gamma', 'auto')])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,2.3658064999999624,0.0009411416870418962,2415.84375,0.7062491054816088,0.6982326305422145,0.697966576416629,0.706601466992665,0.9191811834163665,"[[126  10   0   0   0   0]
+ [ 11  99  16   7   4   0]
+ [  2  34  69  26   5   0]
+ [  1  23  34  52  17   9]
+ [  1   6   5  15  98  11]
+ [  0   0   0   0   3 134]]"
+"MLPClassifier(learning_rate='adaptive', momentum=0.1)","OrderedDict([('learning_rate', 'adaptive'), ('momentum', 0.5)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,2.010817500000485,2.133141809265803e-05,2681.171875,0.698958780592529,0.6878960841360775,0.6831896709118771,0.6992665036674817,0.9152820437920883,"[[136   0   0   0   0   0]
+ [ 12  92  12  19   2   0]
+ [  5  25  76  23   6   1]
+ [  2  23  34  47  19  11]
+ [  1   2   5  23  87  18]
+ [  0   0   0   0   3 134]]"
+"SVC(C=0.01, gamma='auto', probability=True)","OrderedDict([('C', 1.0), ('class_weight', None), ('gamma', 'scale')])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.352770500000588,0.001012072127139302,2416.0078125,0.6915521683125805,0.6856905580511707,0.6852943772341715,0.6919315403422983,0.9229724748226673,"[[126  10   0   0   0   0]
+ [  6 104  10  15   2   0]
+ [  0  31  71  27   6   1]
+ [  1  21  34  50  19  11]
+ [  0   4   5  25  87  15]
+ [  0   0   0   0   9 128]]"
+"MLPClassifier(learning_rate='adaptive', momentum=0.1)","OrderedDict([('learning_rate', 'invscaling'), ('momentum', 0.9)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.9610644999993383,2.0429951100351038e-05,2681.02734375,0.6855320595391441,0.6729033311719549,0.6681233520618907,0.6858190709046454,0.90908376536056,"[[136   0   0   0   0   0]
+ [ 14  86  16  17   4   0]
+ [  2  33  74  20   6   1]
+ [  3  23  30  47  22  11]
+ [  0   2   6  21  84  23]
+ [  0   0   0   0   3 134]]"
+"MLPClassifier(learning_rate='adaptive', momentum=0.1)","OrderedDict([('learning_rate', 'constant'), ('momentum', 0.9)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.9565572000010434,2.114315403473161e-05,2681.109375,0.6855052239874052,0.6728547964201695,0.6667633558028617,0.6858190709046454,0.9102600750577059,"[[136   0   0   0   0   0]
+ [ 11  89  12  19   6   0]
+ [  3  32  72  22   7   0]
+ [  1  23  36  44  22  10]
+ [  1   3   7  18  86  21]
+ [  0   0   0   0   3 134]]"
+"MLPClassifier(learning_rate='adaptive', momentum=0.1)","OrderedDict([('learning_rate', 'adaptive'), ('momentum', 0.9)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.9752229999994597,2.1192542788052297e-05,2681.1328125,0.6842886789752397,0.672279581035067,0.6652224459329912,0.684596577017115,0.9093959890180913,"[[136   0   0   0   0   0]
+ [ 10  88  14  17   8   0]
+ [  3  27  75  24   7   0]
+ [  1  22  39  41  22  11]
+ [  0   2   7  23  86  18]
+ [  0   0   0   0   3 134]]"
+"MLPClassifier(learning_rate='adaptive', momentum=0.1)","OrderedDict([('learning_rate', 'adaptive'), ('momentum', 0.1)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,2.013535199999751,2.089217603871255e-05,2680.83984375,0.6842439530556749,0.6747806057571568,0.6728259006135008,0.684596577017115,0.9154749824194218,"[[126  10   0   0   0   0]
+ [ 16  93   7  19   2   0]
+ [  3  28  73  25   6   1]
+ [  2  22  31  50  21  10]
+ [  1   3   6  20  84  22]
+ [  0   0   0   0   3 134]]"
+"MLPClassifier(learning_rate='adaptive', momentum=0.1)","OrderedDict([('learning_rate', 'constant'), ('momentum', 0.1)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.9568912999984605,2.0975061123883283e-05,2681.0078125,0.676980463718334,0.667476960941744,0.6641293869222646,0.6772616136919315,0.9110500758230379,"[[126  10   0   0   0   0]
+ [ 17  83  16  17   4   0]
+ [  4  34  72  21   4   1]
+ [  2  24  35  46  17  12]
+ [  0   2   5  21  93  15]
+ [  0   0   0   0   3 134]]"
+"MLPClassifier(learning_rate='adaptive', momentum=0.1)","OrderedDict([('learning_rate', 'invscaling'), ('momentum', 0.1)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.9741424000003462,2.1011369193071262e-05,2681.1640625,0.6757996994418205,0.665295000829793,0.6606806993957635,0.676039119804401,0.9106506033704151,"[[136   0   0   0   0   0]
+ [ 13  78  17  21   8   0]
+ [  2  29  72  26   6   1]
+ [  1  25  33  49  17  11]
+ [  1   2   4  23  84  22]
+ [  0   0   0   0   3 134]]"
+QuadraticDiscriminantAnalysis(),"OrderedDict([('priors', None)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.002779600001304061,1.5685207823760784e-05,2692.296875,0.6672123228853586,0.6604080745276574,0.6585456559066084,0.6674816625916871,0.9088737438997834,"[[136   0   0   0   0   0]
+ [  0  76  28  22   7   4]
+ [  0  19  67  37  12   1]
+ [  0  17  30  49  34   6]
+ [  0   4   5  23  81  23]
+ [  0   0   0   0   0 137]]"
+"RandomForestClassifier(max_depth=15, max_features='log2', min_samples_leaf=2,
+                       min_samples_split=15, n_estimators=800, n_jobs=-1)","OrderedDict([('max_depth', 5), ('max_features', None), ('min_samples_leaf', 10), ('min_samples_split', 5), ('n_estimators', 300)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.46646209999926214,0.00048290904645540767,2684.68359375,0.6670065836553599,0.6178834606981609,0.6408268565212791,0.6674816625916871,0.9145010292815137,"[[136   0   0   0   0   0]
+ [ 12 102  14   0   9   0]
+ [  3  27  79   4  21   2]
+ [  5  24  51   6  40  10]
+ [  2  17   6   2  89  20]
+ [  0   0   0   0   3 134]]"
+"MLPClassifier(learning_rate='adaptive', momentum=0.1)","OrderedDict([('learning_rate', 'invscaling'), ('momentum', 0.5)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.9837817000006908,2.0866748165693742e-05,2681.13671875,0.6585533848575926,0.6462861771565122,0.64368771856183,0.6589242053789731,0.9094894129021287,"[[126  10   0   0   0   0]
+ [ 16  88  16  11   6   0]
+ [  4  30  73  21   7   1]
+ [  2  21  36  46  20  11]
+ [  1   4   5  27  72  27]
+ [  0   0   0   0   3 134]]"
+"SVC(C=0.01, gamma='auto', probability=True)","OrderedDict([('C', 100.0), ('class_weight', None), ('gamma', 'auto')])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.5418902000001253,0.0010325141809290118,2415.7265625,0.657417346500644,0.6466037251496726,0.644726579955079,0.6577017114914425,0.9020499916038796,"[[126  10   0   0   0   0]
+ [ 13  84  17  15   8   0]
+ [  4  29  76  22   4   1]
+ [  2  20  38  47  17  12]
+ [  2   6   5  15  77  31]
+ [  0   0   0   0   9 128]]"
+"MLPClassifier(learning_rate='adaptive', momentum=0.1)","OrderedDict([('learning_rate', 'constant'), ('momentum', 0.5)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.940000599999621,2.1599755502864663e-05,2681.17578125,0.6500822956919995,0.6379253871073088,0.6323440911766608,0.6503667481662592,0.9026424079481912,"[[126  10   0   0   0   0]
+ [ 17  82  13  17   8   0]
+ [  5  27  74  21   8   1]
+ [  2  25  36  41  21  11]
+ [  2   4   5  20  81  24]
+ [  0   0   0   0   9 128]]"
+QuadraticDiscriminantAnalysis(),"OrderedDict([('priors', None)])","('sulphates', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",9,0.00496009999915259,2.7657579462501348e-05,2878.203125,0.6439995706311722,0.6288718789032245,0.6249306529903962,0.6442542787286064,0.8960695758905743,"[[136   0   0   0   0   0]
+ [ 12  68  19  20  14   4]
+ [  4  21  56  41  12   2]
+ [  3  16  28  51  30   8]
+ [  2   4   6  16  79  29]
+ [  0   0   0   0   0 137]]"
+"SVC(C=0.01, gamma='auto', probability=True)","OrderedDict([('C', 0.1), ('class_weight', None), ('gamma', 'scale')])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,2.158432299999731,0.0012474913202927304,2415.71484375,0.5791112065264061,0.567913368946212,0.5693567265807222,0.5794621026894865,0.8924512290895985,"[[111  25   0   0   0   0]
+ [ 18  79  19  13   6   2]
+ [  7  32  66  24   6   1]
+ [  8  20  35  42  17  14]
+ [  4   6   5  22  57  42]
+ [  0   0   0   9   9 119]]"
+"GaussianProcessClassifier(copy_X_train=False, n_jobs=-1)","OrderedDict([('copy_X_train', False), ('warm_start', True)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,16.003803399999015,0.018672818459659284,5824.1015625,0.55724917704308,0.5355666198854739,0.5307864656697061,0.5574572127139364,0.8646799378751308,"[[126  10   0   0   0   0]
+ [ 19  65  24  19   8   2]
+ [  9  30  73  13   7   4]
+ [  8  21  40  27  22  18]
+ [  6   7   6  11  54  52]
+ [  0   0   0   9  17 111]]"
+"GaussianProcessClassifier(copy_X_train=False, n_jobs=-1)","OrderedDict([('copy_X_train', False), ('warm_start', False)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,24.8180425999999,0.019877331662592885,6294.38671875,0.55724917704308,0.5355666198854739,0.5307864656697061,0.5574572127139364,0.8646799378751308,"[[126  10   0   0   0   0]
+ [ 19  65  24  19   8   2]
+ [  9  30  73  13   7   4]
+ [  8  21  40  27  22  18]
+ [  6   7   6  11  54  52]
+ [  0   0   0   9  17 111]]"
+"SVC(C=0.01, gamma='auto', probability=True)","OrderedDict([('C', 10.0), ('class_weight', 'balanced'), ('gamma', 'auto')])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.7560272000000623,0.0011308814180928045,2416.25,0.5523919421783312,0.5419728349782664,0.5428092984802676,0.5525672371638142,0.8779147406890635,"[[111  25   0   0   0   0]
+ [ 24  71  17  15   8   2]
+ [ 13  27  69  16   7   4]
+ [  9  23  31  42  17  14]
+ [  8   4   4  15  59  46]
+ [  0   0   0   0  37 100]]"
+"LogisticRegression(C=0.01, n_jobs=-1)","OrderedDict([('C', 1000.0)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.12947959999837622,1.913337408370224e-05,2722.8984375,0.5341169314441105,0.5253370625022691,0.5232093029439225,0.5342298288508558,0.8512997493566669,"[[101  35   0   0   0   0]
+ [ 27  53  26  17  12   2]
+ [  9  24  75  20   5   3]
+ [  5  20  35  42  18  16]
+ [  4   5   6  18  60  43]
+ [  0   0   0   0  31 106]]"
+"GaussianProcessClassifier(copy_X_train=False, n_jobs=-1)","OrderedDict([('copy_X_train', False), ('warm_start', True)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'fixed acidity')",9,16.237210800001776,0.0315491764058673,5980.17578125,0.5302615571776156,0.5012122653059065,0.5053029270980077,0.530562347188264,0.8525211140399528,"[[121   0  15   0   0   0]
+ [ 29  68  28   4   6   2]
+ [ 13  31  68  12   9   3]
+ [  9  30  40  21  19  17]
+ [ 10   7   8   8  45  58]
+ [  0   0   0   9  17 111]]"
+"GaussianProcessClassifier(copy_X_train=False, n_jobs=-1)","OrderedDict([('copy_X_train', False), ('warm_start', False)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'fixed acidity')",9,46.498135199999524,0.032546468948656,6634.73046875,0.5302615571776156,0.5012122653059065,0.5053029270980077,0.530562347188264,0.8525211140399528,"[[121   0  15   0   0   0]
+ [ 29  68  28   4   6   2]
+ [ 13  31  68  12   9   3]
+ [  9  30  40  21  19  17]
+ [ 10   7   8   8  45  58]
+ [  0   0   0   9  17 111]]"
+"LogisticRegression(C=0.01, n_jobs=-1)","OrderedDict([('C', 100.0)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.13772980000067037,1.4760635696718136e-05,2723.1171875,0.5268444969228567,0.5195066806867162,0.5185301376160786,0.5268948655256723,0.8519475914673599,"[[101  35   0   0   0   0]
+ [ 27  53  26  17  12   2]
+ [  9  23  77  18   6   3]
+ [  5  19  37  42  17  16]
+ [  4   6   6  16  61  43]
+ [  0   0   0   0  40  97]]"
+"LogisticRegression(C=0.01, n_jobs=-1)","OrderedDict([('C', 10.0)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.13562199999978475,1.6234229828612732e-05,2726.04296875,0.5170674109059682,0.5084548972614937,0.5084211681065991,0.5171149144254279,0.8516279450686407,"[[101  35   0   0   0   0]
+ [ 34  50  22  15  14   2]
+ [  9  26  76  16   5   4]
+ [  5  19  37  41  18  16]
+ [  3   6   6  16  58  47]
+ [  0   0   0   0  40  97]]"
+"LogisticRegression(C=0.01, n_jobs=-1)","OrderedDict([('C', 1.0)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.19868309999947087,1.7661002446109032e-05,2724.0,0.49141262344353803,0.4809669853742466,0.48011504607067523,0.49144254278728605,0.8427078290409831,"[[101  35   0   0   0   0]
+ [ 36  49  17  19  14   2]
+ [ 12  23  77  15   6   3]
+ [  9  18  35  35  22  17]
+ [  6   3   6  16  51  54]
+ [  0   8   0   0  40  89]]"
+AdaBoostClassifier(algorithm='SAMME'),"OrderedDict([('algorithm', 'SAMME')])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.10927309999897261,5.742677261620321e-05,2688.2265625,0.4851241591527122,0.487049143754099,0.5100062962283258,0.48533007334963324,0.8191022920487734,"[[72 64  0  0  0  0]
+ [13 70 33 13  4  4]
+ [ 5 35 53 24 15  4]
+ [ 2 20 41 31 37  5]
+ [ 0  3 11 20 85 17]
+ [ 0  0  0  6 45 86]]"
+"LogisticRegression(C=0.01, n_jobs=-1)","OrderedDict([('C', 0.1)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.06458509999902162,1.4391931539057289e-05,2728.9453125,0.4729229282954058,0.4512992465818005,0.4488462636479208,0.4731051344743276,0.8103945624935794,"[[103  10   0  23   0   0]
+ [ 43  47  27   6   8   6]
+ [ 14  28  67  11   8   8]
+ [ 13  20  34  24  26  19]
+ [  5   9   7   8  43  64]
+ [  0   8   0   9  17 103]]"
+"SVC(C=0.01, gamma='auto', probability=True)","OrderedDict([('C', 1.0), ('class_weight', 'balanced'), ('gamma', 'auto')])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,2.446313200000077,0.0012657955990218624,2415.5,0.45331508515815083,0.45145919071066626,0.457406017713149,0.45354523227383864,0.8422046119354584,"[[76 37  0 23  0  0]
+ [29 73 16  9 10  0]
+ [15 34 59 19  8  1]
+ [13 25 24 34 26 14]
+ [ 5  9  3 17 52 50]
+ [ 0  8  0  9 43 77]]"
+GaussianNB(),"OrderedDict([('priors', None)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.002541799998653005,1.540366748132553e-05,2691.51953125,0.42037891799055394,0.40073312497929986,0.4158801547409915,0.42053789731051344,0.7977854546469515,"[[ 89  12   0  23   0  12]
+ [ 57  30  19  21   4   6]
+ [ 19  13  56  34   6   8]
+ [ 19  10  23  30  19  35]
+ [  1   9   1  13  36  76]
+ [  0   8   0   4  22 103]]"
+GaussianNB(),"OrderedDict([('priors', None)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",9,0.0037993999976606574,2.483386308312573e-05,2866.7109375,0.4108701874910549,0.4089898462528992,0.4225062784224441,0.41075794621026895,0.7840822110596127,"[[82  0  0 31 23  0]
+ [61 39 16  9 10  2]
+ [24 18 60 19 12  3]
+ [18 12 27 40 27 12]
+ [ 4 13  5 14 54 46]
+ [ 0  8  0  9 59 61]]"
+AdaBoostClassifier(algorithm='SAMME'),"OrderedDict([('algorithm', 'SAMME.R')])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.13006610000047658,8.726797066113033e-05,2688.1953125,0.39837376556462,0.3930159119590039,0.4075612351704293,0.39853300733496333,0.7533863914032065,"[[57 67 12  0  0  0]
+ [20 41 38 26 12  0]
+ [ 2 14 83 19 15  3]
+ [ 2 22 48 22 24 18]
+ [ 0  6  7 24 37 62]
+ [ 0  0  0 28 23 86]]"
+"LogisticRegression(C=0.01, n_jobs=-1)","OrderedDict([('C', 0.01)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.03515490000063437,2.4494009780748615e-05,2729.2421875,0.3884803921568627,0.3419330071513999,0.3447927525510734,0.38875305623471884,0.7514243977121995,"[[101   0   0   0  35   0]
+ [ 63  34   9   2  19  10]
+ [ 31  24  51   4  14  12]
+ [ 25  25  25   2  31  28]
+ [  2  17   9   4  27  77]
+ [  0   8   9   0  17 103]]"
+"SVC(C=0.01, gamma='auto', probability=True)","OrderedDict([('C', 0.01), ('class_weight', 'balanced'), ('gamma', 'scale')])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,3.270539400000416,0.001328200855745695,2415.9375,0.3831669529125519,0.34343409397224245,0.3452754353666842,0.38264058679706603,0.8045314787345993,"[[ 72  10   0   0  54   0]
+ [ 39  46  23   8  17   4]
+ [  4  31  68  13  20   0]
+ [  2  27  37  25  45   0]
+ [  0  18   6  10 102   0]
+ [  0   8   0  20 109   0]]"
+"SVC(C=0.01, gamma='auto', probability=True)","OrderedDict([('C', 0.001), ('class_weight', None), ('gamma', 'scale')])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,3.623692099999971,0.0014331745721274651,2415.98828125,0.375,0.29586183276392003,0.25818443739405966,0.3740831295843521,0.7239588286762791,"[[ 82   0   0   0  54   0]
+ [ 56   0  40  24  17   0]
+ [  7   0  88  20  21   0]
+ [ 12   0  44  33  47   0]
+ [  1   0  10  22 103   0]
+ [  0   0   8  20 109   0]]"
+MultinomialNB(fit_prior=False),"OrderedDict([('fit_prior', False)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.0022142999987408984,1.2706234719254012e-05,2927.609375,0.3594979962788036,0.354340284951809,0.3600872475193585,0.3594132029339853,0.7156398020185414,"[[67 15  0 23 31  0]
+ [59 31 24 11  8  4]
+ [26 24 56 13 15  2]
+ [17 28 29 24 30  8]
+ [ 5 13  7 12 58 41]
+ [ 0  8 13  7 51 58]]"
+MultinomialNB(fit_prior=False),"OrderedDict([('fit_prior', True)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.0022123999988252763,1.2979584350314704e-05,2927.6796875,0.3558573064262201,0.3500818309560662,0.3564701616914707,0.35574572127139364,0.7156433870446045,"[[67 15  0 23 31  0]
+ [63 27 24 11  8  4]
+ [26 24 56 13 16  1]
+ [17 28 30 24 30  7]
+ [ 5 13  7 12 59 40]
+ [ 0  8 13  7 51 58]]"
+"SVC(C=0.01, gamma='auto', probability=True)","OrderedDict([('C', 0.1), ('class_weight', 'balanced'), ('gamma', 'auto')])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,3.5505248999998003,0.0014099608801953832,2415.796875,0.3522702876771146,0.2918394299738129,0.43593129696298616,0.3533007334963325,0.7493318453737935,"[[ 35  47   0   0   0  54]
+ [  3  92   4   9   5  24]
+ [  0  63  33   7   4  29]
+ [  0  62   8   7   2  57]
+ [  0  22   3   6   2 103]
+ [  0  17   0   0   0 120]]"
+GaussianNB(),"OrderedDict([('priors', None)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'citric acid', 'fixed acidity')",6,0.003166600003169151,1.9397921762908786e-05,2894.66015625,0.3374302275654788,0.3243418146294809,0.34448386985072027,0.3374083129584352,0.7520036294782806,"[[67  0 15  0 54  0]
+ [74 21 29  7  6  0]
+ [49 18 51  6 10  2]
+ [45 16 28 15 22 10]
+ [12 10  4 13 53 44]
+ [ 0 16  0  9 43 69]]"
+"SVC(C=0.01, gamma='auto', probability=True)","OrderedDict([('C', 0.001), ('class_weight', None), ('gamma', 'auto')])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,3.30544430000009,0.0013193212713940071,2415.8359375,0.32965686274509803,0.25980952815063996,0.25266910487435595,0.32885085574572126,0.27471589616033604,"[[ 82   0   0   0  54   0]
+ [ 70   0   7  33  27   0]
+ [ 22   0  38  51  25   0]
+ [ 24   0  20  49  43   0]
+ [  3   0   0  33 100   0]
+ [  8   0   0  20 109   0]]"
+"SVC(C=0.01, gamma='auto', probability=True)","OrderedDict([('C', 0.01), ('class_weight', None), ('gamma', 'auto')])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,3.309181499999795,0.0013087984107587633,2416.34375,0.32965686274509803,0.25980952815063996,0.25266910487435595,0.32885085574572126,0.5521080721847157,"[[ 82   0   0   0  54   0]
+ [ 70   0   7  33  27   0]
+ [ 22   0  38  51  25   0]
+ [ 24   0  20  49  43   0]
+ [  3   0   0  33 100   0]
+ [  8   0   0  20 109   0]]"
+"LogisticRegression(C=0.01, n_jobs=-1)","OrderedDict([('C', 0.001)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.018398500000330387,1.5913936430610424e-05,2728.64453125,0.32507692858165166,0.2941851599077317,0.32532438794106916,0.3251833740831296,0.7290262893383042,"[[82  0  0  0 54  0]
+ [77 22  7  2 21  8]
+ [44 16 41  4 21 10]
+ [36 22 17  2 35 24]
+ [ 8 15  4  3 40 66]
+ [ 0 21  0  0 37 79]]"
+DecisionTreeClassifier(criterion='entropy'),"OrderedDict([('criterion', 'gini')])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",9,0.01358990000153426,1.8966259166516062e-05,2903.5078125,0.8762254901960783,0.8741004394073778,0.8725388074468438,0.8765281173594132,0.9259466198147455,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   3  91  38   4   0]
+ [  1   3  34  87  11   0]
+ [  0   0   0   7 129   0]
+ [  0   0   0   0   0 137]]"
+DecisionTreeClassifier(criterion='entropy'),"OrderedDict([('criterion', 'entropy')])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",9,0.01562740000008489,1.8791198043041967e-05,2903.515625,0.8688725490196078,0.864564667958569,0.8619389226720486,0.8691931540342298,0.9215413334711331,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  1   4  89  37   5   0]
+ [  1   4  34  82  13   2]
+ [  0   0   1   3 130   2]
+ [  0   0   0   0   0 137]]"
+GaussianNB(),"OrderedDict([('priors', None)])","('sulphates', 'pH', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",8,0.003857399999105837,2.8368581904470976e-05,2918.48828125,0.4277139687991985,0.39551281433884716,0.42829934738668574,0.4278728606356968,0.7777260045966877,"[[101   0   0  23   0  12]
+ [ 59  24  19  22   2  11]
+ [ 20  10  54  30   6  16]
+ [ 24   6  18  30  15  43]
+ [  5   9   3  13  30  76]
+ [  0   8   4   0  14 111]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=9, p=3)","OrderedDict([('n_neighbors', 15), ('p', 3)])","('sulphates', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",8,0.010566699998889817,0.0003644517114914172,3231.9140625,0.7402318591670246,0.7231439307238403,0.7227793139682589,0.7408312958435208,0.9386917796636876,"[[136   0   0   0   0   0]
+ [  2 133   0   0   2   0]
+ [  2  35  67  24   8   0]
+ [  3  22  32  47  24   8]
+ [  0   4   9  25  86  12]
+ [  0   0   0   0   0 137]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=9, p=3)","OrderedDict([('n_neighbors', 13), ('p', 2)])","('sulphates', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",8,0.0065561000010347925,0.0001923282396087516,3231.70703125,0.7377629884070416,0.7176171076587422,0.7140747666559313,0.7383863080684596,0.9384825899710721,"[[136   0   0   0   0   0]
+ [  0 135   2   0   0   0]
+ [  2  34  62  28  10   0]
+ [  3  21  34  39  31   8]
+ [  0   2   3  26  95  10]
+ [  0   0   0   0   0 137]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=9, p=3)","OrderedDict([('n_neighbors', 11), ('p', 2)])","('sulphates', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",8,0.009415199998329626,0.00024231552567331133,3231.8671875,0.7585784313725491,0.7419462988955112,0.7393863749820097,0.7591687041564792,0.943000570371856,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  2  29  69  28   8   0]
+ [  3  18  32  46  30   7]
+ [  0   2   3  25  96  10]
+ [  0   0   0   0   0 137]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=9, p=3)","OrderedDict([('n_neighbors', 11), ('p', 3)])","('sulphates', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",8,0.009942100001353538,0.00034162200488909236,3231.4921875,0.7634803921568628,0.7472096684661836,0.746147836513922,0.7640586797066015,0.9447238913475359,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  1  30  74  23   8   0]
+ [  3  19  33  48  26   7]
+ [  0   2   9  20  93  12]
+ [  0   0   0   0   0 137]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=9, p=3)","OrderedDict([('n_neighbors', 3), ('p', 3)])","('sulphates', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",8,0.009244499997294042,0.00026782591687067077,3232.12890625,0.8284313725490197,0.8202564062374684,0.8180178917612603,0.8288508557457213,0.9439880779089652,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0  12  80  34  10   0]
+ [  2   8  30  68  26   2]
+ [  0   0   8   6 120   2]
+ [  0   0   0   0   0 137]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=9, p=3)","OrderedDict([('n_neighbors', 9), ('p', 2)])","('sulphates', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",8,0.0066348000000289176,0.00017944474328028363,3232.0390625,0.7647058823529411,0.7456906179337577,0.7411369533935639,0.7652811735941321,0.9438009814000953,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  1  27  70  30   8   0]
+ [  3  17  38  41  30   7]
+ [  0   1   8  14 105   8]
+ [  0   0   0   0   0 137]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=9, p=3)","OrderedDict([('n_neighbors', 5), ('p', 3)])","('sulphates', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",8,0.006702499998937128,0.00022792995109750542,3231.78125,0.795343137254902,0.7826773266686502,0.7812606193284356,0.7958435207823961,0.9472827168609904,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0  18  75  30  13   0]
+ [  2  14  29  53  34   4]
+ [  0   0   2  18 113   3]
+ [  0   0   0   0   0 137]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=9, p=3)","OrderedDict([('n_neighbors', 3), ('p', 2)])","('sulphates', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",8,0.007316100000025472,0.00020792102689356975,3232.0390625,0.8247549019607844,0.8166893585664764,0.8141754880267319,0.8251833740831296,0.9421475276338915,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  1  12  80  33  10   0]
+ [  1   8  35  67  23   2]
+ [  0   0  11   4 118   3]
+ [  0   0   0   0   0 137]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=9, p=3)","OrderedDict([('n_neighbors', 17), ('p', 2)])","('sulphates', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",8,0.006065900000976399,0.0002055344743260483,3232.3984375,0.7316713181623014,0.7124927737093267,0.7133453944911029,0.7322738386308069,0.9325436047351783,"[[136   0   0   0   0   0]
+ [  2 131   0   2   2   0]
+ [  3  37  66  22   8   0]
+ [  3  25  33  41  24  10]
+ [  0   8   6  24  88  10]
+ [  0   0   0   0   0 137]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=9, p=3)","OrderedDict([('n_neighbors', 7), ('p', 3)])","('sulphates', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",8,0.0071673999991617166,0.00027441466993017265,3232.76171875,0.7818627450980392,0.7664135196782925,0.7626101610821293,0.78239608801956,0.9468210328878078,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  1  24  72  32   7   0]
+ [  3  15  33  47  32   6]
+ [  0   0   2  19 111   4]
+ [  0   0   0   0   0 137]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=9, p=3)","OrderedDict([('n_neighbors', 7), ('p', 2)])","('sulphates', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",8,0.010643999998137588,0.00020207787285854046,3232.75390625,0.7720588235294117,0.7552491110690127,0.7498662307978027,0.7726161369193154,0.9471036366493856,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  1  20  69  36  10   0]
+ [  3  15  34  43  34   7]
+ [  0   0   2  19 110   5]
+ [  0   0   0   0   0 137]]"
+"KNeighborsClassifier(n_jobs=-1, n_neighbors=9, p=3)","OrderedDict([('n_neighbors', 9), ('p', 3)])","('sulphates', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",8,0.00724640000044019,0.00029006540342175016,3232.53515625,0.7634803921568626,0.7462241701164933,0.7421703015506276,0.7640586797066015,0.945612347404629,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  1  29  71  29   6   0]
+ [  3  18  36  43  29   7]
+ [  0   1   8  19 101   7]
+ [  0   0   0   0   0 137]]"
+MultinomialNB(fit_prior=False),"OrderedDict([('fit_prior', True)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'fixed acidity')",9,0.006505800000013551,3.476919315414233e-05,3236.875,0.34479211392586234,0.33566755606865584,0.34704033125374906,0.34474327628361856,0.7199660151110796,"[[67  0 15 23 31  0]
+ [60 31 25  4 13  4]
+ [26 27 59  4 17  3]
+ [17 31 35 18 27  8]
+ [ 9 15 11  7 49 45]
+ [ 0 15 13  0 51 58]]"
+MultinomialNB(fit_prior=False),"OrderedDict([('fit_prior', False)])","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'fixed acidity')",9,0.006826500000897795,1.7838386310089987e-05,3236.8203125,0.34962251323887217,0.3400182647201998,0.3489099598656029,0.34963325183374083,0.7199839244483289,"[[67  0 15 23 31  0]
+ [60 31 25  4 13  4]
+ [26 27 59  4 17  3]
+ [16 32 35 18 27  8]
+ [ 9 15 11  7 45 49]
+ [ 0 15 13  0 43 66]]"
