@@ -1,0 +1,856 @@
+algorithm,params,features,n_features,train_time,predict_time,mem_max,balanced_accuracy,f1_weighted,precision_weighted,recall_weighted,roc_auc_ovr_weighted,confusion_matrix
+<class 'sklearn.ensemble._voting.VotingClassifier'>,"{'n_jobs': -1, 'voting': 'soft', 'estimators': [('e1', HistGradientBoostingClassifier(warm_start=True)), ('e2', XGBClassifier(alpha=0.5, base_score=None, booster=None, colsample_bylevel=None,
+              colsample_bynode=None, colsample_bytree=0.7,
+              enable_categorical=False, eta=0.05, eval_metric='mlogloss',
+              gamma=0.9, gpu_id=None, importance_type=None,
+              interaction_constraints=None, lambda=0.01, learning_rate=None,
+              max_delta_step=None, max_depth=17, min_child_weight=3,
+              missing=nan, monotone_constraints=None, n_estimators=100,
+              n_jobs=None, num_parallel_tree=None, predictor=None,
+              random_state=None, reg_alpha=None, reg_lambda=None,
+              scale_pos_weight=None, subsample=0.9, tree_method=None, ...)), ('e3', RandomForestClassifier(max_features='sqrt', n_estimators=500, n_jobs=-1))]}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid')",8,6.266759500000262,0.0013964564792167103,2272.1640625,0.9178921568627451,0.9162094335717553,0.915820159253241,0.9180929095354523,0.989529931382601,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 113  22   1   0]
+ [  0   3  25  95  13   0]
+ [  0   0   0   3 133   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._voting.VotingClassifier'>,"{'n_jobs': -1, 'voting': 'soft', 'estimators': [('e1', HistGradientBoostingClassifier()), ('e2', RandomForestClassifier(max_features='sqrt', n_estimators=500, n_jobs=-1)), ('e3', XGBClassifier(alpha=0.5, base_score=None, booster=None, colsample_bylevel=None,
+              colsample_bynode=None, colsample_bytree=0.7,
+              enable_categorical=False, eta=0.05, eval_metric='mlogloss',
+              gamma=0.9, gpu_id=None, importance_type=None,
+              interaction_constraints=None, lambda=0.01, learning_rate=None,
+              max_delta_step=None, max_depth=17, min_child_weight=3,
+              missing=nan, monotone_constraints=None, n_estimators=100,
+              n_jobs=None, num_parallel_tree=None, predictor=None,
+              random_state=None, reg_alpha=None, reg_lambda=None,
+              scale_pos_weight=None, subsample=0.9, tree_method=None, ...))]}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid')",7,5.871545500000138,0.0013733052567243055,2247.12890625,0.9166666666666666,0.9146192428799809,0.9147708241229023,0.9168704156479217,0.9891104833332138,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 115  20   1   0]
+ [  0   3  28  92  13   0]
+ [  0   0   0   3 133   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._voting.VotingClassifier'>,"{'n_jobs': -1, 'voting': 'soft', 'estimators': [('e1', HistGradientBoostingClassifier(warm_start=True)), ('e2', RandomForestClassifier(max_features='sqrt', n_estimators=500, n_jobs=-1)), ('e3', XGBClassifier(alpha=0.5, base_score=None, booster=None, colsample_bylevel=None,
+              colsample_bynode=None, colsample_bytree=0.7,
+              enable_categorical=False, eta=0.05, eval_metric='mlogloss',
+              gamma=0.9, gpu_id=None, importance_type=None,
+              interaction_constraints=None, lambda=0.01, learning_rate=None,
+              max_delta_step=None, max_depth=17, min_child_weight=3,
+              missing=nan, monotone_constraints=None, n_estimators=100,
+              n_jobs=None, num_parallel_tree=None, predictor=None,
+              random_state=None, reg_alpha=None, reg_lambda=None,
+              scale_pos_weight=None, subsample=0.9, tree_method=None, ...))]}","('sulphates', 'pH', 'density', 'chlorides', 'residual sugar', 'volatile acidity', 'fixed acidity')",7,5.860817099999622,0.0013166536674808814,2204.97265625,0.9166666666666665,0.9154078999357225,0.9154859337617777,0.9168704156479217,0.9899870222056514,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   1 112  21   2   0]
+ [  0   1  32  95   8   0]
+ [  0   0   0   3 133   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>,{'warm_start': True},"('sulphates', 'pH', 'density', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",9,5.4463615999993635,0.00020385537897235935,1996.296875,0.9154411764705882,0.9130435151471937,0.9141601547900712,0.9156479217603912,0.9886444299450058,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 117  18   1   0]
+ [  0   3  32  89  12   0]
+ [  0   0   0   3 133   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>,{'warm_start': True},"('sulphates', 'pH', 'density', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",8,5.2388052999995125,0.0002028311735953328,2041.59375,0.9154411764705882,0.9140937730496327,0.9144936924916833,0.9156479217603912,0.9888631165348571,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   1 113  21   1   0]
+ [  0   1  34  93   8   0]
+ [  0   0   0   3 133   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>,{'warm_start': False},"('sulphates', 'pH', 'density', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",8,5.245662200000879,0.00020879119804421395,2041.75390625,0.9154411764705882,0.9140937730496327,0.9144936924916833,0.9156479217603912,0.9888631165348571,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   1 113  21   1   0]
+ [  0   1  34  93   8   0]
+ [  0   0   0   3 133   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>,{'warm_start': False},"('sulphates', 'pH', 'density', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",9,5.427583200000299,0.000203460024449602,1996.2890625,0.9154411764705882,0.9130435151471937,0.9141601547900712,0.9156479217603912,0.9886444299450058,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 117  18   1   0]
+ [  0   3  32  89  12   0]
+ [  0   0   0   3 133   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>,{'warm_start': False},"('sulphates', 'pH', 'density', 'chlorides', 'residual sugar', 'citric acid', 'fixed acidity')",7,5.008224000001064,0.0002041044009788304,1997.79296875,0.9142156862745098,0.912823031083323,0.9122021776410989,0.9144254278728606,0.9874452387268857,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   1 109  24   2   0]
+ [  0   2  24  97  13   0]
+ [  0   0   0   4 132   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>,{'warm_start': True},"('sulphates', 'pH', 'density', 'chlorides', 'residual sugar', 'citric acid', 'fixed acidity')",7,4.9737665000011475,0.000205053422983006,1997.7578125,0.9142156862745098,0.912823031083323,0.9122021776410989,0.9144254278728606,0.9874452387268857,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   1 109  24   2   0]
+ [  0   2  24  97  13   0]
+ [  0   0   0   4 132   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>,{'warm_start': True},"('sulphates', 'pH', 'density', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'volatile acidity', 'fixed acidity')",8,6.196853500001453,0.00019781051344653573,2265.40234375,0.9129901960784313,0.9114470004000902,0.9118554084582584,0.91320293398533,0.9881084685485664,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 114  21   1   0]
+ [  0   2  34  91   9   0]
+ [  0   0   0   4 132   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>,{'warm_start': False},"('sulphates', 'pH', 'density', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'volatile acidity', 'fixed acidity')",8,6.180195299999468,0.00020556540342119966,2265.3203125,0.9129901960784313,0.9114470004000902,0.9118554084582584,0.91320293398533,0.9881084685485664,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 114  21   1   0]
+ [  0   2  34  91   9   0]
+ [  0   0   0   4 132   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._voting.VotingClassifier'>,"{'n_jobs': -1, 'voting': 'soft', 'estimators': [('e1', HistGradientBoostingClassifier(warm_start=True)), ('e2', RandomForestClassifier(max_features='sqrt', n_estimators=500, n_jobs=-1)), ('e3', XGBClassifier(alpha=0.5, base_score=None, booster=None, colsample_bylevel=None,
+              colsample_bynode=None, colsample_bytree=0.7,
+              enable_categorical=False, eta=0.05, eval_metric='mlogloss',
+              gamma=0.9, gpu_id=None, importance_type=None,
+              interaction_constraints=None, lambda=0.01, learning_rate=None,
+              max_delta_step=None, max_depth=17, min_child_weight=3,
+              missing=nan, monotone_constraints=None, n_estimators=100,
+              n_jobs=None, num_parallel_tree=None, predictor=None,
+              random_state=None, reg_alpha=None, reg_lambda=None,
+              scale_pos_weight=None, subsample=0.9, tree_method=None, ...))]}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'volatile acidity', 'fixed acidity')",9,11.975073099999463,0.002130062102689568,2186.93359375,0.9117647058823529,0.9097596686081605,0.9100005714229166,0.9119804400977995,0.988789623500563,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 113  22   1   0]
+ [  0   1  31  90  14   0]
+ [  0   0   0   3 133   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._stacking.StackingClassifier'>,"{'n_jobs': -1, 'stack_method': 'auto', 'estimators': [('e1', HistGradientBoostingClassifier(warm_start=True)), ('e2', XGBClassifier(alpha=0.5, base_score=None, booster=None, colsample_bylevel=None,
+              colsample_bynode=None, colsample_bytree=0.7,
+              enable_categorical=False, eta=0.05, eval_metric='mlogloss',
+              gamma=0.9, gpu_id=None, importance_type=None,
+              interaction_constraints=None, lambda=0.01, learning_rate=None,
+              max_delta_step=None, max_depth=17, min_child_weight=3,
+              missing=nan, monotone_constraints=None, n_estimators=100,
+              n_jobs=None, num_parallel_tree=None, predictor=None,
+              random_state=None, reg_alpha=None, reg_lambda=None,
+              scale_pos_weight=None, subsample=0.9, tree_method=None, ...)), ('e3', RandomForestClassifier(max_features='sqrt', n_estimators=500, n_jobs=-1))]}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,41.85064270000021,0.0016364679706600477,2509.29296875,0.9105392156862746,0.909954753375398,0.9105224345244937,0.910757946210269,0.9904889258544909,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 111  25   0   0]
+ [  0   0  38  92   6   0]
+ [  0   0   0   4 132   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>,{'warm_start': True},"('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'volatile acidity', 'fixed acidity')",9,8.868828300000132,0.00034642775061153095,1986.03125,0.9105392156862745,0.9084468488136885,0.9083320401909706,0.910757946210269,0.988013465357893,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 112  23   1   0]
+ [  1   1  30  90  14   0]
+ [  0   0   0   3 133   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._voting.VotingClassifier'>,"{'n_jobs': -1, 'voting': 'soft', 'estimators': [('e1', HistGradientBoostingClassifier()), ('e2', RandomForestClassifier(max_features='sqrt', n_estimators=500, n_jobs=-1)), ('e3', XGBClassifier(alpha=0.5, base_score=None, booster=None, colsample_bylevel=None,
+              colsample_bynode=None, colsample_bytree=0.7,
+              enable_categorical=False, eta=0.05, eval_metric='mlogloss',
+              gamma=0.9, gpu_id=None, importance_type=None,
+              interaction_constraints=None, lambda=0.01, learning_rate=None,
+              max_delta_step=None, max_depth=17, min_child_weight=3,
+              missing=nan, monotone_constraints=None, n_estimators=100,
+              n_jobs=None, num_parallel_tree=None, predictor=None,
+              random_state=None, reg_alpha=None, reg_lambda=None,
+              scale_pos_weight=None, subsample=0.9, tree_method=None, ...))]}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",9,11.264726999999766,0.0020835482885087605,2140.32421875,0.9105392156862745,0.9085050301660342,0.9089126870336487,0.910757946210269,0.98955144153898,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 113  22   1   0]
+ [  0   1  33  89  13   0]
+ [  0   0   0   3 133   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._voting.VotingClassifier'>,"{'n_jobs': -1, 'voting': 'soft', 'estimators': [('e1', HistGradientBoostingClassifier()), ('e2', XGBClassifier(alpha=0.5, base_score=None, booster=None, colsample_bylevel=None,
+              colsample_bynode=None, colsample_bytree=0.7,
+              enable_categorical=False, eta=0.05, eval_metric='mlogloss',
+              gamma=0.9, gpu_id=None, importance_type=None,
+              interaction_constraints=None, lambda=0.01, learning_rate=None,
+              max_delta_step=None, max_depth=17, min_child_weight=3,
+              missing=nan, monotone_constraints=None, n_estimators=100,
+              n_jobs=None, num_parallel_tree=None, predictor=None,
+              random_state=None, reg_alpha=None, reg_lambda=None,
+              scale_pos_weight=None, subsample=0.9, tree_method=None, ...)), ('e3', RandomForestClassifier(max_features='sqrt', n_estimators=500, n_jobs=-1))]}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'volatile acidity', 'fixed acidity')",8,6.296378400000322,0.0013408831295846472,2182.140625,0.9105392156862745,0.9089387534635163,0.9084835721411157,0.910757946210269,0.9890979357419929,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 110  25   1   0]
+ [  0   2  31  92  11   0]
+ [  0   0   0   3 133   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>,{'warm_start': True},"('sulphates', 'pH', 'density', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'fixed acidity')",8,9.879589699999997,0.00036104694376472095,2133.94921875,0.9105392156862745,0.9086126433006865,0.9081905652721604,0.910757946210269,0.9867873864442995,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 111  24   1   0]
+ [  0   3  30  91  12   0]
+ [  0   0   0   3 133   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>,{'warm_start': False},"('sulphates', 'pH', 'density', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'fixed acidity')",8,9.81991889999972,0.0003455547677268844,2134.17578125,0.9105392156862745,0.9086126433006865,0.9081905652721604,0.910757946210269,0.9867873864442995,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 111  24   1   0]
+ [  0   3  30  91  12   0]
+ [  0   0   0   3 133   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>,{'warm_start': False},"('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'volatile acidity', 'fixed acidity')",9,8.856256399999438,0.0003556831295838252,1985.9765625,0.9105392156862745,0.9084468488136885,0.9083320401909706,0.910757946210269,0.988013465357893,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 112  23   1   0]
+ [  1   1  30  90  14   0]
+ [  0   0   0   3 133   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>,{'warm_start': True},"('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,5.721982300000491,0.00020404682151635884,2137.6875,0.909313725490196,0.9081713034067619,0.9074199787442184,0.9095354523227384,0.9883414952426705,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 106  29   1   0]
+ [  0   1  29  95  11   0]
+ [  0   0   0   3 133   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>,{'warm_start': False},"('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,5.689880599999924,0.00020190354523253666,2137.88671875,0.909313725490196,0.9081713034067619,0.9074199787442184,0.9095354523227384,0.9883414952426705,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 106  29   1   0]
+ [  0   1  29  95  11   0]
+ [  0   0   0   3 133   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._voting.VotingClassifier'>,"{'n_jobs': -1, 'voting': 'soft', 'estimators': [('e1', HistGradientBoostingClassifier(warm_start=True)), ('e2', RandomForestClassifier(max_features='sqrt', n_estimators=500, n_jobs=-1)), ('e3', XGBClassifier(alpha=0.5, base_score=None, booster=None, colsample_bylevel=None,
+              colsample_bynode=None, colsample_bytree=0.7,
+              enable_categorical=False, eta=0.05, eval_metric='mlogloss',
+              gamma=0.9, gpu_id=None, importance_type=None,
+              interaction_constraints=None, lambda=0.01, learning_rate=None,
+              max_delta_step=None, max_depth=17, min_child_weight=3,
+              missing=nan, monotone_constraints=None, n_estimators=100,
+              n_jobs=None, num_parallel_tree=None, predictor=None,
+              random_state=None, reg_alpha=None, reg_lambda=None,
+              scale_pos_weight=None, subsample=0.9, tree_method=None, ...))]}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,6.522143300000607,0.0013491348410757283,2093.9296875,0.9068627450980392,0.9049607884162147,0.9044245148763977,0.9070904645476773,0.9895102137392539,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 109  26   1   0]
+ [  0   2  31  90  13   0]
+ [  0   0   0   3 133   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>,{'warm_start': True},"('sulphates', 'pH', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",8,5.177741800000149,0.00020067249388687104,2008.421875,0.9056372549019608,0.9035498942641625,0.9032185041817538,0.9058679706601467,0.985785371659652,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 109  25   2   0]
+ [  0   2  32  89  13   0]
+ [  0   0   0   3 133   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._forest.RandomForestClassifier'>,"{'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 500, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'volatile acidity', 'fixed acidity')",9,1.1420410999999149,0.0016245930317844394,2099.40234375,0.9056372549019608,0.9034199930704829,0.9031412220828767,0.9058679706601467,0.989192938932666,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 110  25   1   0]
+ [  0   2  32  88  14   0]
+ [  0   0   0   3 133   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>,{'warm_start': False},"('sulphates', 'pH', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",8,5.20167500000025,0.00020480965770247565,2008.625,0.9056372549019608,0.9035498942641625,0.9032185041817538,0.9058679706601467,0.985785371659652,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 109  25   2   0]
+ [  0   2  32  89  13   0]
+ [  0   0   0   3 133   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._forest.RandomForestClassifier'>,"{'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 500, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.8158358999999109,0.0008450535452318896,2061.24609375,0.9007352941176471,0.8984723311888632,0.8985317329498664,0.9009779951100244,0.9892153453455608,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 110  25   1   0]
+ [  0   1  36  85  14   0]
+ [  0   0   0   4 132   0]
+ [  0   0   0   0   0 137]]"
+<class 'xgboost.sklearn.XGBClassifier'>,"{'alpha': 0.5, 'colsample_bytree': 0.7, 'eta': 0.05, 'eval_metric': 'mlogloss', 'gamma': 0.9, 'lambda': 0.01, 'max_depth': 17, 'min_child_weight': 3, 'subsample': 0.9, 'use_label_encoder': False}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.3610446000002412,6.150378973152574e-05,2182.63671875,0.9007352941176471,0.8982766578923513,0.8973509375375909,0.9009779951100244,0.9840627534754248,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 107  27   2   0]
+ [  0   3  29  88  14   2]
+ [  0   0   1   3 132   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._voting.VotingClassifier'>,"{'n_jobs': -1, 'voting': 'soft', 'estimators': [('e1', HistGradientBoostingClassifier()), ('e2', RandomForestClassifier(max_features='sqrt', n_estimators=500, n_jobs=-1)), ('e3', XGBClassifier(alpha=0.5, base_score=None, booster=None, colsample_bylevel=None,
+              colsample_bynode=None, colsample_bytree=0.7,
+              enable_categorical=False, eta=0.05, eval_metric='mlogloss',
+              gamma=0.9, gpu_id=None, importance_type=None,
+              interaction_constraints=None, lambda=0.01, learning_rate=None,
+              max_delta_step=None, max_depth=17, min_child_weight=3,
+              missing=nan, monotone_constraints=None, n_estimators=100,
+              n_jobs=None, num_parallel_tree=None, predictor=None,
+              random_state=None, reg_alpha=None, reg_lambda=None,
+              scale_pos_weight=None, subsample=0.9, tree_method=None, ...))]}","('pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'volatile acidity', 'fixed acidity')",8,6.153341299999738,0.0013128671149157272,2248.04296875,0.8995098039215685,0.8967820118695675,0.8968821963741558,0.8997555012224939,0.987805533846231,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 106  25   5   0]
+ [  0   2  29  87  18   0]
+ [  0   0   0   3 133   0]
+ [  0   0   0   0   0 137]]"
+<class 'xgboost.sklearn.XGBClassifier'>,"{'alpha': 0.5, 'colsample_bytree': 0.7, 'eta': 0.05, 'eval_metric': 'mlogloss', 'gamma': 0.9, 'lambda': 0.01, 'max_depth': 17, 'min_child_weight': 3, 'subsample': 0.9, 'use_label_encoder': False}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",9,2.0918768999999884,8.399413202941637e-05,2351.3046875,0.8995098039215685,0.8972419717614204,0.8967430322555027,0.8997555012224939,0.9844768239857175,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 108  27   1   0]
+ [  0   2  34  86  13   1]
+ [  0   0   1   3 132   0]
+ [  0   0   0   0   0 137]]"
+<class 'xgboost.sklearn.XGBClassifier'>,"{'alpha': 0.5, 'colsample_bytree': 0.8, 'eta': 0.05, 'eval_metric': 'mlogloss', 'gamma': 0.3, 'lambda': 0.01, 'max_depth': 15, 'min_child_weight': 3, 'subsample': 0.8, 'use_label_encoder': False}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",9,1.9878703000003952,8.832114914376025e-05,2350.98828125,0.8970588235294118,0.8938319007734193,0.893103307439406,0.8973105134474327,0.9853551369459426,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 109  26   1   0]
+ [  1   4  33  83  13   2]
+ [  0   0   1   3 132   0]
+ [  0   0   0   0   0 137]]"
+<class 'xgboost.sklearn.XGBClassifier'>,"{'alpha': 0.5, 'colsample_bytree': 0.8, 'eta': 0.05, 'eval_metric': 'mlogloss', 'gamma': 0.3, 'lambda': 0.01, 'max_depth': 15, 'min_child_weight': 3, 'subsample': 0.8, 'use_label_encoder': False}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.2942537999997512,5.954523227415728e-05,2183.78515625,0.8970588235294117,0.894643389225487,0.8935250990565663,0.8973105134474327,0.9853426077799655,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 108  26   2   0]
+ [  1   3  28  87  16   1]
+ [  0   1   0   6 129   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._forest.RandomForestClassifier'>,"{'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 500, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'volatile acidity')",7,0.7980609999995067,0.0009675008557474085,2241.1171875,0.8970588235294117,0.8951744993460158,0.8941265869411819,0.8973105134474327,0.9891803913414449,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 104  32   0   0]
+ [  0   2  34  87  13   0]
+ [  0   0   0   3 133   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>,{'warm_start': True},"('pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'citric acid', 'volatile acidity', 'fixed acidity')",8,7.257513700000345,0.0002924618581895549,2135.03125,0.8958333333333334,0.8936737086772979,0.8926029513785348,0.8960880195599022,0.9836200159175158,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 100  31   5   0]
+ [  1   2  31  90  12   0]
+ [  0   0   0   3 133   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>,{'warm_start': False},"('pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'citric acid', 'volatile acidity', 'fixed acidity')",8,7.340614700000515,0.00026061601467144323,2135.140625,0.8958333333333334,0.8936737086772979,0.8926029513785348,0.8960880195599022,0.9836200159175158,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 100  31   5   0]
+ [  1   2  31  90  12   0]
+ [  0   0   0   3 133   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.tree._classes.DecisionTreeClassifier'>,{'criterion': 'gini'},"('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.010729999999966822,1.964400977949859e-05,2151.78125,0.8946078431372548,0.8910869639089944,0.8901213029486547,0.8948655256723717,0.9369383044599757,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   5 102  26   3   0]
+ [  1   6  28  87  14   0]
+ [  0   0   0   3 133   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._forest.RandomForestClassifier'>,"{'max_depth': 15, 'max_features': 'sqrt', 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 800, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'volatile acidity', 'fixed acidity')",9,1.5665976999989653,0.0026300669926641227,2343.859375,0.8933823529411765,0.8912478247999067,0.8904854522626486,0.8936430317848411,0.9857262187296102,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 107  28   1   0]
+ [  0   2  35  84  15   0]
+ [  0   0   0   6 130   0]
+ [  0   0   0   0   0 137]]"
+<class 'xgboost.sklearn.XGBClassifier'>,"{'alpha': 0.0, 'colsample_bytree': 0.8, 'eta': 0.01, 'eval_metric': 'mlogloss', 'gamma': 0.5, 'lambda': 0.1, 'max_depth': 9, 'min_child_weight': 5, 'subsample': 0.8, 'use_label_encoder': False}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.0779470999996192,6.178215158899975e-05,2182.33203125,0.892156862745098,0.8888704632283364,0.8878618325779294,0.8924205378973105,0.981737824590813,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 107  27   1   1]
+ [  0   3  34  82  15   2]
+ [  0   1   0   4 131   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._voting.VotingClassifier'>,"{'n_jobs': -1, 'voting': 'soft', 'estimators': [('e1', HistGradientBoostingClassifier(warm_start=True)), ('e2', RandomForestClassifier(max_features='sqrt', n_estimators=500, n_jobs=-1)), ('e3', XGBClassifier(alpha=0.5, base_score=None, booster=None, colsample_bylevel=None,
+              colsample_bynode=None, colsample_bytree=0.7,
+              enable_categorical=False, eta=0.05, eval_metric='mlogloss',
+              gamma=0.9, gpu_id=None, importance_type=None,
+              interaction_constraints=None, lambda=0.01, learning_rate=None,
+              max_delta_step=None, max_depth=17, min_child_weight=3,
+              missing=nan, monotone_constraints=None, n_estimators=100,
+              n_jobs=None, num_parallel_tree=None, predictor=None,
+              random_state=None, reg_alpha=None, reg_lambda=None,
+              scale_pos_weight=None, subsample=0.9, tree_method=None, ...))]}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'citric acid')",7,5.908400400001483,0.0013250382640576045,2226.23828125,0.892156862745098,0.8893754973425869,0.8883802306964126,0.8924205378973105,0.9879543124278511,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 105  31   0   0]
+ [  0   3  36  82  15   0]
+ [  0   0   0   3 133   0]
+ [  0   0   0   0   0 137]]"
+<class 'xgboost.sklearn.XGBClassifier'>,"{'alpha': 0.5, 'colsample_bytree': 0.7, 'eta': 0.015, 'eval_metric': 'mlogloss', 'gamma': 0.7, 'lambda': 0.1, 'max_depth': 9, 'min_child_weight': 3, 'subsample': 0.8, 'use_label_encoder': False}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",9,1.9692740000000413,8.384486552547253e-05,2344.8125,0.8909313725490197,0.8887588362419511,0.8873888366165823,0.89119804400978,0.9831341948745835,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 105  30   1   0]
+ [  0   5  32  85  13   1]
+ [  0   0   1   6 129   0]
+ [  0   0   0   0   0 137]]"
+<class 'xgboost.sklearn.XGBClassifier'>,"{'alpha': 0.5, 'colsample_bytree': 0.7, 'eta': 0.015, 'eval_metric': 'mlogloss', 'gamma': 0.7, 'lambda': 0.1, 'max_depth': 9, 'min_child_weight': 3, 'subsample': 0.8, 'use_label_encoder': False}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.1161412999999811,6.092151589212742e-05,2167.61328125,0.8897058823529411,0.887093129063603,0.8861280194702451,0.8899755501222494,0.9829406139958848,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 107  28   1   0]
+ [  0   3  34  82  16   1]
+ [  0   0   1   6 129   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._forest.RandomForestClassifier'>,"{'max_depth': 15, 'max_features': 'sqrt', 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 800, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.4807750999998461,0.002307467237163205,2083.48828125,0.8872549019607843,0.8848811470558744,0.8841928959566644,0.8875305623471883,0.9860417010231665,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 106  29   1   0]
+ [  0   2  37  81  16   0]
+ [  0   0   1   6 129   0]
+ [  0   0   0   0   0 137]]"
+<class 'xgboost.sklearn.XGBClassifier'>,"{'alpha': 1.0, 'colsample_bytree': 0.8, 'eta': 0.05, 'eval_metric': 'mlogloss', 'gamma': 0.05, 'lambda': 0.1, 'max_depth': 15, 'min_child_weight': 5, 'subsample': 0.6, 'use_label_encoder': False}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.0851557999994839,6.0266870416104246e-05,2170.42578125,0.8848039215686274,0.8819485992674574,0.8801611818711856,0.8850855745721271,0.9814868938238149,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   2 101  30   2   1]
+ [  1   3  29  85  16   2]
+ [  0   1   0   7 128   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._forest.RandomForestClassifier'>,"{'max_depth': 25, 'max_features': 'log2', 'min_samples_leaf': 1, 'min_samples_split': 15, 'n_estimators': 300, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.49011980000068434,0.0004984832518339607,2060.59765625,0.8848039215686274,0.8822571383775388,0.8816027849300342,0.8850855745721271,0.98264129064139,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 105  29   2   0]
+ [  0   2  38  80  16   0]
+ [  0   0   1   6 129   0]
+ [  0   0   0   0   0 137]]"
+<class 'xgboost.sklearn.XGBClassifier'>,"{'alpha': 1.0, 'colsample_bytree': 0.8, 'eta': 0.05, 'eval_metric': 'mlogloss', 'gamma': 0.05, 'lambda': 0.1, 'max_depth': 15, 'min_child_weight': 5, 'subsample': 0.6, 'use_label_encoder': False}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",9,1.7578640000001542,8.383875305618928e-05,2341.4375,0.8835784313725491,0.8803814196561893,0.8785250459735582,0.8838630806845966,0.9813094271371565,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   2 102  30   2   0]
+ [  1   4  33  82  14   2]
+ [  0   1   0   6 129   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.tree._classes.DecisionTreeClassifier'>,{'criterion': 'entropy'},"('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.014629000000240922,1.2176283618610243e-05,2151.76171875,0.8811274509803922,0.8767286577107424,0.8751329727964758,0.8814180929095354,0.9288737883309434,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   3  97  32   4   0]
+ [  1   3  28  82  18   4]
+ [  0   0   0   3 132   1]
+ [  0   0   0   0   0 137]]"
+<class 'xgboost.sklearn.XGBClassifier'>,"{'alpha': 0.0, 'colsample_bytree': 0.8, 'eta': 0.01, 'eval_metric': 'mlogloss', 'gamma': 0.5, 'lambda': 0.1, 'max_depth': 9, 'min_child_weight': 5, 'subsample': 0.8, 'use_label_encoder': False}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",9,1.612428300000829,8.246552567286077e-05,2349.08984375,0.8811274509803922,0.8790918839480873,0.8774973411184253,0.8814180929095354,0.9814043934773413,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 104  31   1   0]
+ [  0   4  34  82  14   2]
+ [  0   1   0  10 125   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._forest.RandomForestClassifier'>,"{'max_depth': 15, 'max_features': 'sqrt', 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 800, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'volatile acidity')",7,1.5423987000012858,0.0027633133251832843,2257.58984375,0.8786764705882354,0.8763769440895247,0.8751800911272462,0.8789731051344744,0.9852780773108291,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 101  34   1   0]
+ [  0   2  39  79  16   0]
+ [  0   0   1   6 129   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._forest.RandomForestClassifier'>,"{'max_depth': 25, 'max_features': 'log2', 'min_samples_leaf': 1, 'min_samples_split': 15, 'n_estimators': 300, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'volatile acidity', 'fixed acidity')",9,1.0669068999995943,0.0010436784841058263,2101.0625,0.8774509803921569,0.8742039867983217,0.8731314655277097,0.8777506112469438,0.9829173244873631,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 104  31   1   0]
+ [  0   3  41  75  17   0]
+ [  0   0   0   7 129   0]
+ [  0   0   0   0   0 137]]"
+<class 'xgboost.sklearn.XGBClassifier'>,"{'alpha': 0.5, 'colsample_bytree': 0.9, 'eta': 0.05, 'eval_metric': 'mlogloss', 'gamma': 0.7, 'lambda': 0.1, 'max_depth': 7, 'min_child_weight': 5, 'subsample': 0.9, 'use_label_encoder': False}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",9,1.4243733000002976,7.94517114907711e-05,2337.48828125,0.8762254901960785,0.8735644326960124,0.8716853919721907,0.8765281173594132,0.9792193121953247,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 101  34   1   0]
+ [  1   4  34  79  17   1]
+ [  0   0   1   8 127   0]
+ [  0   0   0   0   0 137]]"
+<class 'xgboost.sklearn.XGBClassifier'>,"{'alpha': 0.5, 'colsample_bytree': 0.9, 'eta': 0.05, 'eval_metric': 'mlogloss', 'gamma': 0.7, 'lambda': 0.1, 'max_depth': 7, 'min_child_weight': 5, 'subsample': 0.9, 'use_label_encoder': False}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.9634183999996822,5.950073349581844e-05,2168.9609375,0.8725490196078431,0.8699234031135689,0.8680116018955301,0.8728606356968215,0.9792694788706092,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   1  99  35   1   0]
+ [  0   3  37  78  16   2]
+ [  0   0   1   8 127   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._forest.RandomForestClassifier'>,"{'max_depth': 25, 'max_features': 'log2', 'min_samples_leaf': 1, 'min_samples_split': 15, 'n_estimators': 300, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'volatile acidity')",7,0.48443459999907645,0.0005517421760400472,2241.02734375,0.8700980392156863,0.8674798446875052,0.8658885742675327,0.8704156479217604,0.9809759933915071,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0  97  38   1   0]
+ [  0   2  40  76  18   0]
+ [  0   0   1   6 129   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._forest.RandomForestClassifier'>,"{'max_depth': 25, 'max_features': None, 'min_samples_leaf': 5, 'min_samples_split': 5, 'n_estimators': 800, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'volatile acidity', 'fixed acidity')",9,3.487114499999734,0.003673825794620645,2103.06640625,0.8664215686274509,0.8609950481094568,0.8587909589364999,0.8667481662591687,0.9782530555450883,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   3 100  30   2   1]
+ [  0   6  36  71  21   2]
+ [  0   0   0   8 128   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._forest.RandomForestClassifier'>,"{'max_depth': 25, 'max_features': None, 'min_samples_leaf': 5, 'min_samples_split': 5, 'n_estimators': 800, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.7770561999996062,0.001464738141809007,2052.80859375,0.863970588235294,0.8600200242279217,0.8574995008125226,0.8643031784841075,0.97852723897012,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   3  99  31   2   1]
+ [  1   3  36  74  19   3]
+ [  0   0   1  11 124   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._forest.RandomForestClassifier'>,"{'max_depth': 25, 'max_features': None, 'min_samples_leaf': 5, 'min_samples_split': 5, 'n_estimators': 500, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'volatile acidity')",7,0.9484111000001576,0.0009453458435200891,2233.5078125,0.8615196078431372,0.857128969222734,0.8550356545865732,0.8618581907090465,0.9780935455748782,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   2  96  35   2   1]
+ [  0   2  40  71  22   1]
+ [  0   0   1   7 128   0]
+ [  0   0   0   0   0 137]]"
+<class 'xgboost.sklearn.XGBClassifier'>,"{'alpha': 0.5, 'colsample_bytree': 1.0, 'eta': 0.01, 'eval_metric': 'mlogloss', 'gamma': 0.1, 'lambda': 1.0, 'max_depth': 5, 'min_child_weight': 3, 'subsample': 0.7, 'use_label_encoder': False}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",9,1.1460576000008587,6.69987775058193e-05,2343.01953125,0.8615196078431372,0.8575042404572432,0.8549262441298315,0.8618581907090465,0.9729398363452973,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   2  98  32   3   1]
+ [  0   5  36  74  17   4]
+ [  0   0   2  10 123   1]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._forest.RandomForestClassifier'>,"{'max_depth': 25, 'max_features': None, 'min_samples_leaf': 5, 'min_samples_split': 5, 'n_estimators': 800, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'volatile acidity')",7,1.5228210000004765,0.0015231853300723484,2234.73046875,0.8590686274509803,0.8544732017449354,0.8519695722366298,0.8594132029339854,0.9777959857794598,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   2  96  36   1   1]
+ [  0   3  42  69  21   1]
+ [  0   0   0   8 128   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._forest.RandomForestClassifier'>,"{'max_depth': 25, 'max_features': None, 'min_samples_leaf': 5, 'min_samples_split': 5, 'n_estimators': 500, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.0311886999998023,0.000819353422982775,2041.19921875,0.857843137254902,0.8525570932832067,0.8499128648541707,0.8581907090464548,0.9786276249642433,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   3  99  30   3   1]
+ [  1   4  37  69  22   3]
+ [  0   0   1  11 124   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._forest.RandomForestClassifier'>,"{'max_depth': 25, 'max_features': None, 'min_samples_leaf': 5, 'min_samples_split': 5, 'n_estimators': 500, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'volatile acidity', 'fixed acidity')",9,1.0873633000010159,0.0010841059902193366,2295.4375,0.857843137254902,0.8529210874021237,0.8506005859162786,0.8581907090464548,0.9778013343645995,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   3  97  32   3   1]
+ [  0   6  35  71  22   2]
+ [  0   0   4   8 124   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.svm._classes.SVC'>,"{'C': 1000.0, 'class_weight': None, 'gamma': 'scale', 'probability': True}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,5.744621400000142,0.000692739731051524,2344.828125,0.8566176470588235,0.8498046473836796,0.8480737998443599,0.8569682151589242,0.9634054568982003,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   8  95  27   6   0]
+ [  0  11  36  69  18   2]
+ [  0   0   0   9 127   0]
+ [  0   0   0   0   0 137]]"
+<class 'xgboost.sklearn.XGBClassifier'>,"{'alpha': 0.5, 'colsample_bytree': 0.9, 'eta': 0.1, 'eval_metric': 'mlogloss', 'gamma': 0.7, 'lambda': 1.0, 'max_depth': 5, 'min_child_weight': 3, 'subsample': 0.8, 'use_label_encoder': False}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",9,1.1310146999994686,6.820635696912597e-05,2336.4296875,0.8553921568627452,0.8518749252134801,0.849300488869097,0.8557457212713936,0.973355744115643,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   3  96  34   2   1]
+ [  1   5  38  74  16   2]
+ [  0   3   1  12 120   0]
+ [  0   0   0   0   0 137]]"
+<class 'xgboost.sklearn.XGBClassifier'>,"{'alpha': 0.5, 'colsample_bytree': 1.0, 'eta': 0.01, 'eval_metric': 'mlogloss', 'gamma': 0.1, 'lambda': 1.0, 'max_depth': 5, 'min_child_weight': 3, 'subsample': 0.7, 'use_label_encoder': False}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.7767755000004399,5.199511002381742e-05,2169.3203125,0.8553921568627451,0.8507336059139476,0.8477562848360778,0.8557457212713936,0.9731011282998282,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   2  95  34   3   2]
+ [  0   4  36  72  19   5]
+ [  0   0   1  10 123   2]
+ [  0   0   0   0   0 137]]"
+<class 'xgboost.sklearn.XGBClassifier'>,"{'alpha': 0.5, 'colsample_bytree': 0.9, 'eta': 0.1, 'eval_metric': 'mlogloss', 'gamma': 0.7, 'lambda': 1.0, 'max_depth': 5, 'min_child_weight': 3, 'subsample': 0.8, 'use_label_encoder': False}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.7652883000000656,5.267897310497134e-05,2160.5703125,0.8517156862745098,0.8463907756718012,0.8429095340152266,0.8520782396088019,0.9732661368893085,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   2  92  39   2   1]
+ [  0   4  40  68  19   5]
+ [  0   1   0   8 127   0]
+ [  0   0   0   0   0 137]]"
+<class 'xgboost.sklearn.XGBClassifier'>,"{'alpha': 0.1, 'colsample_bytree': 0.6, 'eta': 0.015, 'eval_metric': 'mlogloss', 'gamma': 1.0, 'lambda': 0.1, 'max_depth': 5, 'min_child_weight': 3, 'subsample': 0.6, 'use_label_encoder': False}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.7744763000000603,5.248924205432799e-05,2169.6640625,0.8455882352941176,0.8413195353296044,0.8383330221160269,0.8459657701711492,0.9710092919137636,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   4  90  38   2   2]
+ [  0   4  38  72  21   1]
+ [  0   4   0  11 120   1]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._gb.GradientBoostingClassifier'>,{'loss': 'deviance'},"('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,2.1810734000000593,4.6117603912483686e-05,2135.85546875,0.8431640904536998,0.8393163253054502,0.8367034196368724,0.843520782396088,0.9712566481834094,"[[136   0   0   0   0   0]
+ [  0 134   0   3   0   0]
+ [  0   5  92  36   3   0]
+ [  0   5  41  68  22   0]
+ [  0   1   0  12 123   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._forest.RandomForestClassifier'>,"{'max_depth': 20, 'max_features': 'sqrt', 'min_samples_leaf': 10, 'min_samples_split': 5, 'n_estimators': 500, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.7712796000005255,0.000795691198043615,2050.9453125,0.8345588235294118,0.8270317134216243,0.8238653089045271,0.8349633251833741,0.9712690483726777,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   7  92  31   5   1]
+ [  0   7  42  61  24   2]
+ [  0   3   1  12 120   0]
+ [  0   0   0   0   0 137]]"
+<class 'xgboost.sklearn.XGBClassifier'>,"{'alpha': 0.1, 'colsample_bytree': 0.6, 'eta': 0.015, 'eval_metric': 'mlogloss', 'gamma': 1.0, 'lambda': 0.1, 'max_depth': 5, 'min_child_weight': 3, 'subsample': 0.6, 'use_label_encoder': False}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",9,1.0991475999999238,6.828667481648617e-05,2343.33984375,0.8345588235294117,0.8315347300623913,0.8295696694232312,0.8349633251833741,0.9698440399952455,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   3  86  44   2   1]
+ [  0   6  34  72  23   1]
+ [  0   3   1  16 115   1]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.svm._classes.SVC'>,"{'C': 100.0, 'class_weight': 'balanced', 'gamma': 'scale', 'probability': True}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,6.190051799999765,0.00469823178484086,2344.95703125,0.8296568627450981,0.8228575957284702,0.8196063916174394,0.8300733496332519,0.9558695741828175,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0  13  87  33   3   0]
+ [  0  11  38  64  20   3]
+ [  0   0   1  16 118   1]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.svm._classes.SVC'>,"{'C': 100.0, 'class_weight': None, 'gamma': 'scale', 'probability': True}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,3.129291199999898,0.005275451833740634,2346.0625,0.8296568627450981,0.8228575957284702,0.8196063916174394,0.8300733496332519,0.9567658333307801,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0  13  87  33   3   0]
+ [  0  11  38  64  20   3]
+ [  0   0   1  16 118   1]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._forest.RandomForestClassifier'>,"{'max_depth': 30, 'max_features': 'sqrt', 'min_samples_leaf': 10, 'min_samples_split': 10, 'n_estimators': 120, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.1846716000000015,0.0002276493887531797,2021.8828125,0.8272506082725061,0.8210562038076924,0.8181733280340914,0.8276283618581907,0.9704015036515306,"[[136   0   0   0   0   0]
+ [  0 132   5   0   0   0]
+ [  0   8  90  32   5   1]
+ [  0   7  42  62  24   1]
+ [  0   3   0  13 120   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._forest.RandomForestClassifier'>,"{'max_depth': 20, 'max_features': 'sqrt', 'min_samples_leaf': 10, 'min_samples_split': 10, 'n_estimators': 800, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.1634563999996317,0.0012136061124697235,2053.29296875,0.8260251180764278,0.8194454378753986,0.8172060277596428,0.8264058679706602,0.9713372165114319,"[[136   0   0   0   0   0]
+ [  0 132   5   0   0   0]
+ [  0   7  92  30   6   1]
+ [  0   5  45  60  25   1]
+ [  0   3   1  12 119   1]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._forest.RandomForestClassifier'>,"{'max_depth': 20, 'max_features': 'sqrt', 'min_samples_leaf': 10, 'min_samples_split': 5, 'n_estimators': 500, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'volatile acidity', 'fixed acidity')",9,1.434126300000571,0.0014056546454774919,2102.62890625,0.8247996278803492,0.8179215337526529,0.8143153549930519,0.8251833740831296,0.9711399663769827,"[[136   0   0   0   0   0]
+ [  0 132   5   0   0   0]
+ [  0   7  86  38   4   1]
+ [  0   6  42  61  25   2]
+ [  0   3   0   9 123   1]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._forest.RandomForestClassifier'>,"{'max_depth': 30, 'max_features': 'sqrt', 'min_samples_leaf': 10, 'min_samples_split': 10, 'n_estimators': 120, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'volatile acidity', 'fixed acidity')",9,0.19210349999957543,0.00027694400977917215,2294.78125,0.8235741376842708,0.8152795645601022,0.8122673353584969,0.823960880195599,0.9705501164059543,"[[136   0   0   0   0   0]
+ [  0 132   5   0   0   0]
+ [  0   6  90  34   5   1]
+ [  0   8  43  57  25   3]
+ [  0   3   2   8 122   1]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._forest.RandomForestClassifier'>,"{'max_depth': 20, 'max_features': 'sqrt', 'min_samples_leaf': 10, 'min_samples_split': 10, 'n_estimators': 800, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'volatile acidity', 'fixed acidity')",9,1.1351906999989296,0.0012679844743268933,2075.12890625,0.8211231572921139,0.8136760418645339,0.8099816747801165,0.8215158924205379,0.9710467451706303,"[[136   0   0   0   0   0]
+ [  0 132   5   0   0   0]
+ [  0   7  86  37   5   1]
+ [  0   7  42  59  26   2]
+ [  0   3   0  10 122   1]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._forest.RandomForestClassifier'>,"{'max_depth': 30, 'max_features': 'sqrt', 'min_samples_leaf': 10, 'min_samples_split': 10, 'n_estimators': 120, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'volatile acidity')",7,0.18538400000034017,0.0002506345965768275,2233.4609375,0.812544725919565,0.8032696345731197,0.7995779631670363,0.812958435207824,0.9702918260700337,"[[136   0   0   0   0   0]
+ [  0 132   5   0   0   0]
+ [  0   7  89  35   4   1]
+ [  0   7  44  53  30   2]
+ [  0   3   2   9 118   4]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._forest.RandomForestClassifier'>,"{'max_depth': 20, 'max_features': 'sqrt', 'min_samples_leaf': 10, 'min_samples_split': 5, 'n_estimators': 500, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'volatile acidity')",7,0.7235681000001932,0.000894130929096576,2234.12890625,0.8113192357234865,0.8044001206508362,0.8000641020049231,0.8117359413202934,0.9703349727273222,"[[136   0   0   0   0   0]
+ [  0 132   5   0   0   0]
+ [  0   8  85  41   2   0]
+ [  0   7  42  58  26   3]
+ [  0   3   3  10 116   4]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.neighbors._classification.KNeighborsClassifier'>,"{'n_jobs': -1, 'n_neighbors': 5, 'p': 3}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.018778000000111206,0.0003608147921756064,2343.32421875,0.8100490196078433,0.79963865748475,0.7994016814515871,0.8105134474327629,0.9510423076348452,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  1  13  79  35   8   0]
+ [  0  11  23  60  37   5]
+ [  0   1   2  12 114   7]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._forest.RandomForestClassifier'>,"{'max_depth': 20, 'max_features': 'sqrt', 'min_samples_leaf': 10, 'min_samples_split': 10, 'n_estimators': 800, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'volatile acidity')",7,1.1179874999997992,0.0013957127139359136,2213.63671875,0.8051917847430943,0.7958239537819662,0.7912147000934303,0.8056234718826406,0.9698850308989764,"[[136   0   0   0   0   0]
+ [  0 132   5   0   0   0]
+ [  0   8  85  39   3   1]
+ [  0   6  46  51  30   3]
+ [  0   3   3   9 118   3]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._forest.RandomForestClassifier'>,"{'max_depth': 8, 'max_features': None, 'min_samples_leaf': 2, 'min_samples_split': 15, 'n_estimators': 1200, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'volatile acidity', 'fixed acidity')",9,2.6380711999991036,0.0021014026894850815,2100.71484375,0.801470588235294,0.789155482109973,0.7833926994712772,0.8019559902200489,0.9661488283403079,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0  12  84  35   5   0]
+ [  1  11  41  48  28   7]
+ [  0   1   6  13 114   2]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._forest.RandomForestClassifier'>,"{'max_depth': 8, 'max_features': None, 'min_samples_leaf': 2, 'min_samples_split': 15, 'n_estimators': 1200, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,2.0974863999999798,0.0017909600244493582,2033.7734375,0.7965686274509803,0.7830926137824769,0.7771733298639661,0.7970660146699267,0.9657687839914827,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0  17  82  33   4   0]
+ [  1   9  41  46  32   7]
+ [  0   1   3  16 114   2]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.neighbors._classification.KNeighborsClassifier'>,"{'n_jobs': -1, 'n_neighbors': 5, 'p': 2}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.01227100000005521,0.0003069438875303835,2342.4609375,0.7928921568627452,0.7816950334820839,0.7781762377290521,0.793398533007335,0.9487792928347101,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  1  10  79  36  10   0]
+ [  0  10  31  51  41   3]
+ [  0   1   3  16 109   7]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._forest.RandomForestClassifier'>,"{'max_depth': 8, 'max_features': None, 'min_samples_leaf': 2, 'min_samples_split': 15, 'n_estimators': 1200, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'volatile acidity')",7,1.9539055999994162,0.0016689031784849504,2209.0,0.7904859023901532,0.7823667615158406,0.7771478597244644,0.7909535452322738,0.9652057980263279,"[[136   0   0   0   0   0]
+ [  0 132   5   0   0   0]
+ [  0  16  75  41   4   0]
+ [  0   7  43  55  26   5]
+ [  0   1   5  15 112   3]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.neighbors._classification.KNeighborsClassifier'>,"{'n_jobs': -1, 'n_neighbors': 7, 'p': 2}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.023492499999974825,0.00032685403422934555,2342.95703125,0.7794117647058822,0.7665469579181652,0.7647291772323328,0.7799511002444988,0.9476111876355368,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  1  16  67  39  13   0]
+ [  0  12  29  54  36   5]
+ [  0   2   2  17 107   8]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.svm._classes.SVC'>,"{'C': 10.0, 'class_weight': None, 'gamma': 'scale', 'probability': True}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,3.740749699999924,0.005516711369193422,2346.2890625,0.7722019464720195,0.7652216864705791,0.7603257644682703,0.7726161369193154,0.9451363746546596,"[[136   0   0   0   0   0]
+ [  0 121  11   5   0   0]
+ [  2  16  82  32   4   0]
+ [  1  12  33  55  28   7]
+ [  1   1   1  25 101   7]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.svm._classes.SVC'>,"{'C': 10.0, 'class_weight': 'balanced', 'gamma': 'scale', 'probability': True}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,3.4335261000001083,0.005660181540342552,2346.40234375,0.770976456275941,0.7636986684945338,0.7586715401605335,0.7713936430317848,0.9454124769372537,"[[136   0   0   0   0   0]
+ [  0 121  11   5   0   0]
+ [  2  16  82  32   4   0]
+ [  1  13  33  54  28   7]
+ [  1   1   1  25 101   7]
+ [  0   0   0   0   0 137]]"
+<class 'xgboost.sklearn.XGBClassifier'>,"{'alpha': 0.5, 'colsample_bytree': 0.7, 'eta': 0.05, 'eval_metric': 'mlogloss', 'gamma': 0.7, 'lambda': 0.1, 'max_depth': 3, 'min_child_weight': 3, 'subsample': 0.7, 'use_label_encoder': False}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.5640863999997237,4.7694132028531196e-05,2158.80078125,0.7624427508229569,0.7554522662910788,0.7520852302796978,0.7628361858190709,0.9488595637266494,"[[136   0   0   0   0   0]
+ [  2 123   3   5   4   0]
+ [  1  14  77  36   6   2]
+ [  0   8  34  59  24  11]
+ [  0   5   0  20  99  12]
+ [  0   0   0   0   7 130]]"
+<class 'sklearn.ensemble._forest.RandomForestClassifier'>,"{'max_depth': 25, 'max_features': 'log2', 'min_samples_leaf': 5, 'min_samples_split': 100, 'n_estimators': 800, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'volatile acidity', 'fixed acidity')",9,1.098732899999959,0.0011132577017117695,2109.921875,0.7624069700873051,0.7505399056367965,0.7441002823228176,0.7628361858190709,0.9499634174675251,"[[136   0   0   0   0   0]
+ [  2 120   9   6   0   0]
+ [  0  17  77  33   8   1]
+ [  0  10  43  44  31   8]
+ [  0   4   4  13 110   5]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.neighbors._classification.KNeighborsClassifier'>,"{'n_jobs': -1, 'n_neighbors': 9, 'p': 3}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.010890800000197487,0.0004084603911980509,2343.40625,0.7610741376842709,0.7497286673661091,0.7478028491318444,0.7616136919315404,0.9450504050979429,"[[136   0   0   0   0   0]
+ [  0 132   0   5   0   0]
+ [  1  19  68  33  15   0]
+ [  0  14  28  53  33   8]
+ [  0   2   3  25  97   9]
+ [  0   0   0   0   0 137]]"
+<class 'xgboost.sklearn.XGBClassifier'>,"{'alpha': 0.5, 'colsample_bytree': 0.7, 'eta': 0.05, 'eval_metric': 'mlogloss', 'gamma': 0.7, 'lambda': 0.1, 'max_depth': 3, 'min_child_weight': 3, 'subsample': 0.7, 'use_label_encoder': False}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",9,0.8092025999994803,6.32089242053842e-05,2330.58203125,0.7587662802347216,0.7501207335610943,0.746580078527601,0.7591687041564792,0.9480056694791907,"[[136   0   0   0   0   0]
+ [  4 123   0   6   4   0]
+ [  2  16  74  37   5   2]
+ [  0   8  34  55  26  13]
+ [  0   5   0  20 103   8]
+ [  0   0   0   0   7 130]]"
+<class 'sklearn.ensemble._forest.RandomForestClassifier'>,"{'max_depth': 25, 'max_features': 'log2', 'min_samples_leaf': 5, 'min_samples_split': 100, 'n_estimators': 800, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.1007390999993731,0.001179770904646076,2083.2265625,0.7526656648060683,0.7409429490965167,0.7365266910405401,0.7530562347188264,0.9485418888290472,"[[136   0   0   0   0   0]
+ [  2 120   5   6   4   0]
+ [  0  17  83  26   9   1]
+ [  0  11  43  44  28  10]
+ [  0   9   2  15 103   7]
+ [  0   0   0   0   7 130]]"
+<class 'sklearn.neighbors._classification.KNeighborsClassifier'>,"{'n_jobs': -1, 'n_neighbors': 11, 'p': 2}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.01326420000032158,0.0003107908312959031,2342.74609375,0.7426917847430944,0.7253743700852128,0.7211604157815649,0.7432762836185819,0.9406653786262893,"[[136   0   0   0   0   0]
+ [  0 132   5   0   0   0]
+ [  1  27  62  31  14   1]
+ [  1  17  32  45  34   7]
+ [  0   2   5  20  96  13]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._forest.RandomForestClassifier'>,"{'max_depth': 25, 'max_features': 'log2', 'min_samples_leaf': 5, 'min_samples_split': 100, 'n_estimators': 800, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'volatile acidity')",7,1.1188278000008722,0.0013686595354505484,2257.2265625,0.7392031630170317,0.7272421760316681,0.7215270713742843,0.7396088019559902,0.947750879939646,"[[136   0   0   0   0   0]
+ [  2 118  11   6   0   0]
+ [  0  21  75  32   7   1]
+ [  0  10  44  40  35   7]
+ [  0   4   5  14 106   7]
+ [  0   0   0   0   7 130]]"
+<class 'sklearn.neighbors._classification.KNeighborsClassifier'>,"{'n_jobs': -1, 'n_neighbors': 11, 'p': 3}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.012347500000032596,0.00043431907090479794,2343.28515625,0.7377898239587806,0.7215069644637966,0.7172406911649704,0.7383863080684596,0.9413265698263212,"[[136   0   0   0   0   0]
+ [  0 132   5   0   0   0]
+ [  1  28  60  30  15   2]
+ [  1  16  33  48  30   8]
+ [  0   3   5  25  91  12]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.neighbors._classification.KNeighborsClassifier'>,"{'n_jobs': -1, 'n_neighbors': 13, 'p': 3}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.012081300000318151,0.0004886698044009854,2343.546875,0.7267872477458136,0.7076082485593197,0.7052162030611004,0.7273838630806846,0.9368652667924279,"[[136   0   0   0   0   0]
+ [  0 129   0   5   3   0]
+ [  2  31  58  28  14   3]
+ [  1  20  30  42  33  10]
+ [  0   2   5  23  93  13]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.neighbors._classification.KNeighborsClassifier'>,"{'n_jobs': -1, 'n_neighbors': 15, 'p': 2}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.01112539999985529,0.0003646237163813615,2342.84375,0.7146128524402462,0.693729860329956,0.6914420110031391,0.715158924205379,0.9353392604395513,"[[136   0   0   0   0   0]
+ [  2 120   0   9   6   0]
+ [  2  34  57  26  14   3]
+ [  3  20  30  39  31  13]
+ [  0   3   4  18  96  15]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.neighbors._classification.KNeighborsClassifier'>,"{'n_jobs': -1, 'n_neighbors': 15, 'p': 3}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.011564200000066194,0.00044442163814220853,2343.125,0.7048089308716188,0.6830154487870497,0.6771600853455251,0.7053789731051344,0.9343449302977754,"[[136   0   0   0   0   0]
+ [  2 120   0   9   6   0]
+ [  2  32  58  26  14   4]
+ [  4  20  33  34  33  12]
+ [  0   2   5  22  92  15]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis'>,{'priors': None},"('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.002668499999344931,1.5330929095965504e-05,1976.90625,0.6391960068699013,0.633843347579514,0.6478259788097444,0.6393643031784841,0.8951347395458561,"[[136   0   0   0   0   0]
+ [  0  57  29  34  13   4]
+ [  0   9  55  66   5   1]
+ [  0  15  18  58  32  13]
+ [  0   6   2  25  80  23]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.svm._classes.SVC'>,"{'C': 100.0, 'class_weight': None, 'gamma': 'auto', 'probability': True}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,4.3357465000003685,0.007527910024449837,2346.97265625,0.629329469013883,0.6205573128326897,0.6170798936229929,0.6295843520782396,0.8903755305851735,"[[123  13   0   0   0   0]
+ [ 14  83  14  15   8   3]
+ [  3  16  81  30   6   0]
+ [  2  21  30  46  23  14]
+ [  1  11   4  20  64  36]
+ [  0   0   0   0  19 118]]"
+<class 'sklearn.neural_network._multilayer_perceptron.MLPClassifier'>,"{'learning_rate': 'invscaling', 'momentum': 0.5}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.9203026000004684,2.1795965770414555e-05,1970.1484375,0.6268248175182481,0.6173200701849771,0.614055215626917,0.6271393643031785,0.8962578529311546,"[[123  13   0   0   0   0]
+ [ 12  77  17  17  14   0]
+ [  3  19  75  33   5   1]
+ [  2  15  31  48  28  12]
+ [  1   7   5  28  60  35]
+ [  0   0   0   0   7 130]]"
+<class 'sklearn.neural_network._multilayer_perceptron.MLPClassifier'>,"{'learning_rate': 'constant', 'momentum': 0.5}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.942283100000168,2.2734229828740603e-05,1970.171875,0.6243648919421784,0.6175676534379563,0.6160772308821791,0.6246943765281173,0.8973080470969034,"[[123  13   0   0   0   0]
+ [ 14  78  14  24   7   0]
+ [  2  20  69  39   6   0]
+ [  3  18  28  46  32   9]
+ [  1   5   4  31  65  30]
+ [  0   0   0   0   7 130]]"
+<class 'sklearn.neural_network._multilayer_perceptron.MLPClassifier'>,"{'learning_rate': 'adaptive', 'momentum': 0.5}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.9539373999996315,2.1962469437114483e-05,1970.19921875,0.6171014026048375,0.6105675218718488,0.6058541699955525,0.617359413202934,0.8991425881102278,"[[123  13   0   0   0   0]
+ [ 16  80  14  20   7   0]
+ [  3  21  72  34   6   0]
+ [  2  17  35  40  32  10]
+ [  1   6   3  27  72  27]
+ [  0   0   0   0  19 118]]"
+<class 'sklearn.neural_network._multilayer_perceptron.MLPClassifier'>,"{'learning_rate': 'constant', 'momentum': 0.1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.9436159999995652,2.1444621026941274e-05,1970.21484375,0.6122173321883498,0.604915794084923,0.6002529901693956,0.6124694376528117,0.9007381695008535,"[[123  13   0   0   0   0]
+ [ 14  78  14  20  11   0]
+ [  3  17  76  33   6   1]
+ [  4  19  33  39  29  12]
+ [  1   5   3  29  67  31]
+ [  0   0   0   0  19 118]]"
+<class 'sklearn.neural_network._multilayer_perceptron.MLPClassifier'>,"{'learning_rate': 'invscaling', 'momentum': 0.9}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.9662811999996848,2.1337775061468662e-05,1969.9375,0.6097931873479319,0.6019099396986969,0.5967767262509668,0.6100244498777506,0.8969585649636571,"[[123  13   0   0   0   0]
+ [ 14  75  17  24   7   0]
+ [  2  23  73  31   7   0]
+ [  2  23  35  39  28   9]
+ [  1   9   4  18  71  33]
+ [  0   0   0   0  19 118]]"
+<class 'sklearn.neural_network._multilayer_perceptron.MLPClassifier'>,"{'learning_rate': 'invscaling', 'momentum': 0.1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,1.8439816000000064,2.180036674856533e-05,1969.91015625,0.6073511521396879,0.599175798482278,0.5937469219984854,0.6075794621026895,0.8900569449540779,"[[123  13   0   0   0   0]
+ [ 16  74  16  17  14   0]
+ [  3  18  76  32   6   1]
+ [  3  23  31  39  28  12]
+ [  1   5   5  28  67  30]
+ [  0   0   0   0  19 118]]"
+<class 'sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis'>,{'priors': None},"('sulphates', 'density', 'total sulfur dioxide', 'chlorides', 'citric acid', 'volatile acidity', 'fixed acidity')",7,0.0033854000002975226,3.853190709042616e-05,1998.82421875,0.5829039645055103,0.566855856129898,0.5792721590435321,0.5831295843520783,0.8564554406160753,"[[136   0   0   0   0   0]
+ [  5  55  21  37  10   9]
+ [  9  13  47  53   9   5]
+ [  6  12  18  49  36  15]
+ [  5   5   2  26  60  38]
+ [  0   0   0   0   7 130]]"
+<class 'sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis'>,{'priors': None},"('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'volatile acidity')",8,0.002441700000417768,1.4673594131812164e-05,1975.375,0.552481394017461,0.5355150981208185,0.553886016080279,0.5525672371638142,0.8582745912862346,"[[136   0   0   0   0   0]
+ [ 21  44  21  39   7   5]
+ [  8  10  52  51   7   8]
+ [ 11  13  14  43  33  22]
+ [  3   8   1  22  60  42]
+ [  0   0   0  13   7 117]]"
+<class 'sklearn.gaussian_process._gpc.GaussianProcessClassifier'>,"{'copy_X_train': False, 'n_jobs': -1, 'warm_start': True}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,16.946647000000667,0.019896433496333174,5821.15625,0.537703950193216,0.5189599983941302,0.5127536562571643,0.5378973105134475,0.8492796871928414,"[[123  13   0   0   0   0]
+ [ 24  64  18  12  11   8]
+ [ 12  21  71  20   8   4]
+ [  8  24  31  28  28  17]
+ [  3  10   6  18  49  50]
+ [  0   0   0  13  19 105]]"
+<class 'sklearn.gaussian_process._gpc.GaussianProcessClassifier'>,"{'copy_X_train': False, 'n_jobs': -1, 'warm_start': False}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,25.774887300000046,0.019863860757946064,6322.58203125,0.537703950193216,0.5189599983941302,0.5127536562571643,0.5378973105134475,0.8492796871928414,"[[123  13   0   0   0   0]
+ [ 24  64  18  12  11   8]
+ [ 12  21  71  20   8   4]
+ [  8  24  31  28  28  17]
+ [  3  10   6  18  49  50]
+ [  0   0   0  13  19 105]]"
+<class 'sklearn.linear_model._logistic.LogisticRegression'>,"{'C': 1000.0, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.11054200000035053,1.2274572127308694e-05,2138.8046875,0.5304494060397881,0.5224001517423287,0.5186944877187405,0.530562347188264,0.8411729640939688,"[[100  36   0   0   0   0]
+ [ 33  53  18  22   8   3]
+ [ 11  12  79  24   8   2]
+ [  5  17  30  43  25  16]
+ [  0  14   5  21  54  42]
+ [  0   0   0   0  32 105]]"
+<class 'sklearn.linear_model._logistic.LogisticRegression'>,"{'C': 100.0, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.11333339999964664,1.2359535452347046e-05,2139.2578125,0.5267729354515528,0.5181641663730604,0.5143132954262056,0.5268948655256723,0.8411119818004074,"[[100  36   0   0   0   0]
+ [ 33  53  18  22   8   3]
+ [ 11  12  77  26   8   2]
+ [  5  17  30  43  25  16]
+ [  4  10   5  21  53  43]
+ [  0   0   0   0  32 105]]"
+<class 'sklearn.linear_model._logistic.LogisticRegression'>,"{'C': 10.0, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.11993789999996807,1.2186919315252026e-05,2139.32421875,0.524321955059396,0.5149018012060139,0.512067253246876,0.5244498777506112,0.842034517978611,"[[100  36   0   0   0   0]
+ [ 33  53  18  14  11   8]
+ [ 11  12  76  27   8   2]
+ [  7  19  30  41  25  14]
+ [  2  12   5  19  54  44]
+ [  0   0   0   0  32 105]]"
+<class 'sklearn.linear_model._logistic.LogisticRegression'>,"{'C': 1.0, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.10145599999941624,1.2039853300383582e-05,2139.3359375,0.5023346930012882,0.48762076717989783,0.48482787780651077,0.5024449877750611,0.8354084395977699,"[[111  25   0   0   0   0]
+ [ 42  48  12  16  11   8]
+ [ 12  12  71  31   9   1]
+ [  8  20  28  35  28  17]
+ [  3   9   6  20  44  54]
+ [  0   3   0  13  19 102]]"
+<class 'sklearn.ensemble._weight_boosting.AdaBoostClassifier'>,{'algorithm': 'SAMME.R'},"('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.12802639999972598,7.737481662572201e-05,1973.890625,0.446105266924288,0.44156428006752224,0.4628099257704595,0.44621026894865523,0.7650045843586585,"[[64 32 40  0  0  0]
+ [17 49 35 25 11  0]
+ [ 3 10 90 18 12  3]
+ [ 0 12 42 32 33 17]
+ [ 1  5  8 20 45 57]
+ [ 0  0  0  3 49 85]]"
+<class 'sklearn.ensemble._weight_boosting.AdaBoostClassifier'>,{'algorithm': 'SAMME'},"('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.106010100000276,4.875916870432797e-05,1973.76953125,0.44501395448690423,0.4523082470282743,0.5111123656426502,0.4449877750611247,0.8263014060493278,"[[84 52  0  0  0  0]
+ [ 2 78 18 39  0  0]
+ [ 2 33 36 58  4  3]
+ [ 1 20 18 73 18  6]
+ [ 1  6  3 55 52 19]
+ [ 0  0  9 37 50 41]]"
+<class 'sklearn.svm._classes.SVC'>,"{'C': 1.0, 'class_weight': 'balanced', 'gamma': 'auto', 'probability': True}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,8.312832000000071,0.009483861491442503,2346.32421875,0.4448708315442966,0.4451385299139725,0.45281130774466133,0.4449877750611247,0.8288513532273115,"[[87 24  0 25  0  0]
+ [39 54 14 16 14  0]
+ [ 8 29 61 25 13  0]
+ [11 25 16 32 36 16]
+ [ 3 12  3 15 49 54]
+ [ 0  3  0 13 40 81]]"
+<class 'sklearn.linear_model._logistic.LogisticRegression'>,"{'C': 0.1, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.05548949999956676,1.2108312959024301e-05,2139.34375,0.4314709460426507,0.4148277606689266,0.4096290139262826,0.4315403422982885,0.8008396941750613,"[[98 13  0 25  0  0]
+ [47 33 22 11 13 11]
+ [10 24 67 17 11  7]
+ [11 19 29 24 25 28]
+ [ 2 17  6 17 38 56]
+ [ 0  3  0 13 28 93]]"
+<class 'sklearn.naive_bayes.GaussianNB'>,{'priors': None},"('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.002219400000285532,1.7865770171544943e-05,1976.34765625,0.431327823100043,0.41366455671245705,0.43039678190016994,0.4315403422982885,0.7825880737985563,"[[ 86  10   0  25  15   0]
+ [ 54  28  12  21  10  12]
+ [ 10  15  50  41  14   6]
+ [ 13  14  13  37  25  34]
+ [  2   9   4  23  38  60]
+ [  0   3   0   6  14 114]]"
+<class 'sklearn.naive_bayes.GaussianNB'>,{'priors': None},"('sulphates', 'pH', 'density', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",9,0.0031112999995457358,2.1443276283432118e-05,2224.875,0.42885000715614713,0.41308652655708583,0.4132552939923566,0.4290953545232274,0.7780063104671106,"[[ 73  23  25   0  15   0]
+ [ 43  32  24  19   7  12]
+ [  7  17  55  33  18   6]
+ [  1  16  23  36  29  31]
+ [  4   9   2  20  42  59]
+ [  0   3   0   0  21 113]]"
+<class 'sklearn.naive_bayes.MultinomialNB'>,{'fit_prior': True},"('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.002292699999998149,1.269413202878345e-05,2134.34375,0.3801971518534421,0.37604619485662266,0.38561910313694353,0.3801955990220049,0.7115393297521608,"[[76 11  0 25 24  0]
+ [51 42 17  4 22  1]
+ [14 35 53 12 21  1]
+ [12 27 28 21 39  9]
+ [ 9 17  8  9 57 36]
+ [ 0  3 19  8 45 62]]"
+<class 'sklearn.naive_bayes.MultinomialNB'>,{'fit_prior': False},"('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.0024602999992566765,1.629743276242459e-05,2134.08984375,0.3765206812652068,0.3721374751135566,0.379473577080924,0.3765281173594132,0.7115231971348768,"[[76 11  0 25 24  0]
+ [51 42 17  4 22  1]
+ [13 36 53 12 20  2]
+ [12 27 28 21 36 12]
+ [ 9 19  6  9 54 39]
+ [ 0  3 19  8 45 62]]"
+<class 'sklearn.svm._classes.SVC'>,"{'C': 0.1, 'class_weight': 'balanced', 'gamma': 'auto', 'probability': True}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,10.24763939999957,0.008931679462103026,2347.66015625,0.3584514097609846,0.3116591719725775,0.4723636028048192,0.3594132029339853,0.7577409556820341,"[[ 41  46   0   0   9  40]
+ [  2  91   2  11   4  27]
+ [  0  66  28  11   5  26]
+ [  0  52   8  15   3  58]
+ [  0  32   0   3   4  97]
+ [  0  22   0   0   0 115]]"
+<class 'sklearn.linear_model._logistic.LogisticRegression'>,"{'C': 0.001, 'n_jobs': -1}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,0.014909100000295439,1.3997432762978033e-05,2139.58203125,0.3471178617432374,0.3205161117820988,0.39711838274067446,0.3471882640586797,0.727579407563967,"[[87  0  0  0 49  0]
+ [69 25  6  2 24 11]
+ [32 25 43  2 25  9]
+ [27 24 16  5 36 28]
+ [ 9 24  2  1 46 54]
+ [ 0 22  0  0 37 78]]"
+<class 'sklearn.svm._classes.SVC'>,"{'C': 0.001, 'class_weight': None, 'gamma': 'auto', 'probability': True}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'volatile acidity', 'fixed acidity')",10,10.595753899999636,0.009180383740831174,2346.80859375,0.338235294117647,0.2698143169377661,0.27599816521726983,0.3374083129584352,0.274218390880477,"[[ 87   0   0   0  49   0]
+ [ 70   0   6  29  32   0]
+ [ 20   0  39  47  30   0]
+ [ 20   0  11  52  53   0]
+ [ 11   0   0  27  98   0]
+ [  3   0   0  27 107   0]]"
+<class 'sklearn.ensemble._voting.VotingClassifier'>,"{'n_jobs': -1, 'voting': 'soft', 'estimators': [('e1', HistGradientBoostingClassifier(warm_start=True)), ('e2', RandomForestClassifier(max_features='sqrt', n_estimators=500, n_jobs=-1)), ('e3', XGBClassifier(alpha=0.5, base_score=None, booster=None, colsample_bylevel=None,
+              colsample_bynode=None, colsample_bytree=0.7,
+              enable_categorical=False, eta=0.05, eval_metric='mlogloss',
+              gamma=0.9, gpu_id=None, importance_type=None,
+              interaction_constraints=None, lambda=0.01, learning_rate=None,
+              max_delta_step=None, max_depth=17, min_child_weight=3,
+              missing=nan, monotone_constraints=None, n_estimators=100,
+              n_jobs=None, num_parallel_tree=None, predictor=None,
+              random_state=None, reg_alpha=None, reg_lambda=None,
+              scale_pos_weight=None, subsample=0.9, tree_method=None, ...))]}","('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid', 'fixed acidity')",9,6.523709400000371,0.0014017557457225089,2208.34375,0.909313725490196,0.9068122856502825,0.9067399214211307,0.9095354523227384,0.9893094522797181,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 112  22   2   0]
+ [  0   4  29  89  14   0]
+ [  0   0   0   3 133   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>,{'warm_start': True},"('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid')",8,5.8810895000005985,0.00020370330073330128,2221.57421875,0.9191176470588235,0.917752421666265,0.9170403657474601,0.9193154034229829,0.9880206354100195,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 111  24   1   0]
+ [  0   4  23  98  11   0]
+ [  0   0   0   3 133   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier'>,{'warm_start': False},"('sulphates', 'pH', 'density', 'total sulfur dioxide', 'free sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid')",8,5.867992399998911,0.00021133361858179355,2221.48828125,0.9191176470588235,0.917752421666265,0.9170403657474601,0.9193154034229829,0.9880206354100195,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   0 111  24   1   0]
+ [  0   4  23  98  11   0]
+ [  0   0   0   3 133   0]
+ [  0   0   0   0   0 137]]"
+<class 'sklearn.ensemble._gb.GradientBoostingClassifier'>,{'loss': 'deviance'},"('sulphates', 'pH', 'density', 'total sulfur dioxide', 'chlorides', 'residual sugar', 'citric acid')",7,1.7566654999991442,4.698667481581055e-05,2010.765625,0.8468137254901961,0.8422915795370933,0.8396927212275461,0.8471882640586798,0.9688451653986255,"[[136   0   0   0   0   0]
+ [  0 137   0   0   0   0]
+ [  0   9  90  34   3   0]
+ [  0   7  38  71  20   0]
+ [  0   0   0  14 122   0]
+ [  0   0   0   0   0 137]]"
