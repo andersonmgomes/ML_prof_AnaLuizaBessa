@@ -1,0 +1,31 @@
+algorithm,params,features,n_features,train_time,predict_time,mem_max,accuracy,f1_weighted,precision_weighted,recall_weighted,confusion_matrix
+DecisionTreeClassifier(),{'criterion': 'gini'},"('fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol')",11,0.012035703659057618,0.0014308929443359376,,0.8858104111209701,0.6603003588925601,0.6585283808231569,0.6625,"[[ 0  0  0  1  0  0]
+ [ 0  0  3  2  0  0]
+ [ 0  6 47 14  1  0]
+ [ 0  0 14 46  4  0]
+ [ 0  0  2  4 13  1]
+ [ 0  0  0  0  2  0]]"
+"KNeighborsClassifier(metric='manhattan', n_jobs=-1, n_neighbors=3)","{'metric': 'manhattan', 'n_jobs': -1, 'n_neighbors': 3}","('fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol')",11,0.007124090194702148,0.03481526374816894,,0.8439392931085479,0.6121858506064526,0.6181687565308256,0.6125,"[[ 0  0  1  0  0  0]
+ [ 1  0  2  2  0  0]
+ [ 0  4 47 14  3  0]
+ [ 0  2 15 37 10  0]
+ [ 0  0  1  5 14  0]
+ [ 0  0  0  0  2  0]]"
+GaussianNB(),{'priors': None},"('fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol')",11,0.005775356292724609,0.002305936813354492,,0.4861246672582077,0.4325913395918639,0.5418123863375531,0.3875,"[[ 0  1  0  0  0  0]
+ [ 3  1  1  0  0  0]
+ [ 8  6 35 12  6  1]
+ [ 6  4 15 15 14 10]
+ [ 0  2  0  2 10  6]
+ [ 0  0  0  0  1  1]]"
+MultinomialNB(),{'alpha': 1.0},"('fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol')",11,0.0028267860412597655,0.0021011829376220703,,0.45704044661342796,0.35224078915735063,0.6056037712287712,0.3125,"[[ 0  1  0  0  0  0]
+ [ 1  2  1  0  1  0]
+ [ 7 19 29  3 10  0]
+ [ 4 17 13  8 17  5]
+ [ 0  3  1  0 10  6]
+ [ 0  0  0  0  1  1]]"
+BernoulliNB(),{'alpha': 1.0},"('fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol')",11,0.0029098987579345703,0.001176929473876953,,0.2498558118899734,0.012240332374560561,0.1251700680272109,0.01875,"[[ 0  0  0  0  0  1]
+ [ 1  0  0  0  0  4]
+ [ 5  0  0  0  0 63]
+ [ 6  0  0  0  0 58]
+ [ 0  0  0  0  1 19]
+ [ 0  0  0  0  0  2]]"
